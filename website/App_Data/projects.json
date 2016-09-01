@@ -1,0 +1,48 @@
+{
+  "item" : [ {
+    "about" : "<a href='https://bitbucket.org/gaikema/gaikbot/wiki/Home'>GaikBot</a> is a chatbot, sort of like the \"sequel\" to Dank Sinatra. He is written in C#, and uses the Microsoft Bot Framework to integrate him with various channels, including SMS, Facebook, and Telegram.",
+    "display" : "<iframe src=\"https://webchat.botframework.com/embed/gaikbot?s=_kROGLOlwLY.cwA.KSI.dyBYCR7BCGOtIE5qj0kSN3V1BWreyDC1oxhn_vAtEG0\" style=\"height: 502px; max-height: 502px;\"></iframe>",
+    "id" : "gaikbot",
+    "name" : "GaikBot"
+  }, {
+    "about" : "I am the Official webmaster for Math Club, the umbrella organization for all undergraduate societies within the Mathematics Departament at Texas A&M. I was unanimously elected, and I created the first website for the club from scratch, which is currently hosted <a href=\"https://peaceful-atoll-84937.herokuapp.com/\">here</a> but will soon be hosted on the Math Department servers.",
+    "id" : "pme",
+    "name" : "Math Club Website"
+  }, {
+    "about" : "PolyRoot is a Mathematica library which impliments various <a href=\"https://en.wikipedia.org/wiki/Root-finding_algorithm\">root-finding algorithms</a>. The source code can be found <a href=\"https://github.com/TexAgg/PolyRoot\">here</a>.",
+    "id" : "polyroot",
+    "name" : "PolyRoot"
+  }, {
+    "about" : "A basic Markov text generator written in C++. View the source code <a href=\"https://github.com/TexAgg/MarkovTextGenerator\">here</a>. \nI also created an implementation in PHP <a href=\"https://bitbucket.org/gaikema/markovbot/overview\">here</a>.",
+    "id" : "markov",
+    "name" : "Markov Text Generator"
+  }, {
+    "about" : "I helped design and implement the website for <a href='http://aggiecodingclub.com/'>Aggie Coding Club.</a> I worked with a group of about 10 other students.",
+    "id" : "acc",
+    "name" : "Aggie Coding Club Website"
+  }, {
+    "about" : "<a href='http://devpost.com/software/ilumi-therapy'>Ilumi-Therapy</a> is an android app that me and my team created for HackDFW. It is based on the concept of Light Therapy, an emerging field in medical science. It was created using the <a href='http://ilumi.co/'>Ilumi</a> Smart Bulb SDK, and it won us first place in Ilumi's contest for the most creative use of their SDK at the hackathon. The source code can be found <a href='https://github.com/ralphie9224/IlumiApp'>here.</a>",
+    "id" : "ilumiapp",
+    "name" : "IlumiTherapy"
+  }, {
+    "about" : "Based on <a href='https://github.com/TexAgg/FlapGod'>Flap God,</a> Flap God 2 is a game about <a href='https://en.wikipedia.org/wiki/Pancake_sorting'>pancake sorting.</a> The object of the game is to get the pancakes sorted from smallest to largest in as few flips as possible. Works best on Google Chrome.",
+    "display" : "<img id='pancakes' class='proj' src='media/pancakes.PNG'></img>",
+    "id" : "flap",
+    "name" : "Flap God 2"
+  }, {
+    "about" : "Enter three sides of the triangle and, using Heron's formula, this will calculate the area and draw the triangle. Click <a href='https://github.com/TexAgg/TriangleCalculator'>here</a> for the source code.",
+    "display" : "<a href='https://dl.dropboxusercontent.com/u/222607174/triangle_calculator/index.html' target='_blank'><img id='triangle_img' class='proj' src='media/triangle.PNG'></img></a>",
+    "id" : "triangle",
+    "name" : "Triangle Calculator"
+  }, {
+    "about" : "Bubbles will float around aimlessly, heading the opposite direction whenever colliding with a wall or another bubble. Works best on Google Chrome. Click <a href='https://github.com/TexAgg/Bubble'>here</a> for the source code.",
+    "display" : "<a href='https://dl.dropboxusercontent.com/u/222607174/Bubble/index.html'><img id='bubble_img' class='proj' src='media/bubbles.PNG'></img></a>",
+    "id" : "bubble",
+    "name" : "Bubble"
+  }, {
+    "about" : "<a href='https://www.facebook.com/profile.php?id=100010461758967&fref=ts'>Dank Sinatra</a> is a Facebook chatbot. He is written in JavaScript (using Node.js) and a smidgen of Python. Type '\\help' to see a list of his available commands. He also pushes relevant messages to a database, sends me email updates, and posts weather updates every 3 hours, but new features are constantly being added. I hope to one day make him a full-on companion, such as Siri or Watson (albiet not as realistic). For more information, see <a href=\"https://bitbucket.org/gaikema/danksinatra/wiki/Home\">here.</a>",
+    "display" : "<a href='https://www.facebook.com/profile.php?id=100010461758967&fref=ts'><img class='proj' src='media/fb_icon_325x325.png'></img></a></a>",
+    "id" : "dank",
+    "name" : "Dank Sinatra"
+  } ]
+}

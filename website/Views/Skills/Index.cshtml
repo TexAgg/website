@@ -1,0 +1,19 @@
+﻿@model website.Controllers.SkillsController
+
+<div id='skills' class="container panel panel-default">
+	<div class="panel-heading">
+		<h2>@ViewBag.Title</h2>
+	</div>
+	<ul class="skills-list"><u>Proficient in:</u>
+	@foreach (var skill in ViewBag.ProficientSkills)
+	{
+		<li>@skill</li>
+	}
+	</ul>
+	<ul class="skills-list"><u>Familiar with:</u>
+	@foreach (var skill in ViewBag.FamiliarSkills)
+	{
+		<li>@skill</li>
+	}
+	</ul>
+</div>
