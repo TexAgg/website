@@ -1,0 +1,48 @@
+<!--Triangle Calculator-->
+<!Doctype html>
+<html>
+<head>
+	<title>Triangle calculator</title>
+	<meta name="author" content="Matt Gaikema"></meta>
+	<meta name="description" content="Calculates the area of a triangle
+	and draws it, given 3 lengths."></meta>
+	<link rel="stylesheet" href="style/styles.css"></link>
+	<link rel="icon" href="images/red_triangle.png"></link>
+	<script src="scripts/triangle.js"></script>
+	<!--http://docs.mathjax.org/en/latest/start.html#putting-mathematics-in-a-web-page-->
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+</head>
+<body>
+	<div id="input_area">
+		<h2>Enter the lengths of your triangle</h2>
+		<h4>All angles are in radians</h4>
+		Side a:
+		<input type="number" id="length_a" value="3"></input>
+		<br></br>
+		Side b:
+		<input type="number" id="length_b" value="4"></input>
+		<br></br>
+		Side c:
+		<input type="number" id="length_c" value="5"></input>
+		<br></br>
+		<input type="button" id="butt" value="Calculate!" onclick="main()"></input>
+		<br></br>
+	</div>
+	<div id="output_area">	
+		Area:
+		<input type="number" id="answer" readonly></input>
+		<br></br>
+		\(\theta_c\):
+		<input type="number" id="theta_c" readonly></input>
+		<br></br>
+		\(\theta_b\):
+		<input type="number" id="theta_b" readonly></input>
+		<br></br>
+		\(\theta_a\):
+		<input type="number" id="theta_a" readonly></input>
+	</div>	
+	<canvas id="myCanvas" width="500" height="400"></canvas>
+</body>
+</html>

@@ -78,6 +78,8 @@
     <Folder Include="Views\Resume\" />
     <Folder Include="Content\media\resume\" />
     <Folder Include="Views\Contact\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Static\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -89,6 +91,7 @@
     <Compile Include="Models\Project.cs" />
     <Compile Include="Controllers\ResumeController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Utilities\Firebase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -106,6 +109,20 @@
     <Content Include="Views\Resume\Index.cshtml" />
     <Content Include="Content\media\resume\main-1.png" />
     <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Static\Bubble\index.html" />
+    <Content Include="Static\Bubble\script.js" />
+    <Content Include="Static\Bubble\style.css" />
+    <Content Include="Static\flap_god2\index.html" />
+    <Content Include="Static\flap_god2\media\eminem.jpg" />
+    <Content Include="Static\flap_god2\media\pepe.png" />
+    <Content Include="Static\flap_god2\media\rules.PNG" />
+    <Content Include="Static\flap_god2\scripts\game.js" />
+    <Content Include="Static\flap_god2\scripts\scoring.js" />
+    <Content Include="Static\flap_god2\styles\style.css" />
+    <Content Include="Static\triangle_calculator\index.html" />
+    <Content Include="Static\triangle_calculator\images\red_triangle.png" />
+    <Content Include="Static\triangle_calculator\scripts\triangle.js" />
+    <Content Include="Static\triangle_calculator\style\styles.css" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -119,5 +136,8 @@
     <None Include="App_Data\projects.json" />
     <None Include="Content\media\resume\README.md" />
     <None Include="Content\media\resume\main.pdf" />
+    <None Include="Static\flap_god2\media\rapgod.mp3" />
+    <None Include="Static\flap_god2\media\rules.txt" />
+    <None Include="Static\README.txt" />
   </ItemGroup>
 </Project>
