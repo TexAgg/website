@@ -7,13 +7,20 @@ using System.Web.Mvc.Ajax;
 
 namespace website.Controllers
 {
+	/// <summary>
+	/// Home controller.
+	/// Display information about me.
+	/// </summary>
 	public class HomeController : Controller
 	{
-		public ActionResult Index ()
+		/// <summary>
+		/// Default action.
+		/// </summary>
+		public ActionResult Index()
 		{
 			ViewBag.Title = "Matt Gaikema";
 
-			return View ();
+			return View();
 		}
 	}
 }

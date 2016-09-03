@@ -6,13 +6,17 @@ using System.Web.Mvc;
 
 namespace website.Controllers
 {
-    public class ContactController : Controller
+    /// <summary>
+    /// Contact controller.
+	/// Display my contact information.
+    /// </summary>
+	public class ContactController : Controller
     {
         public ActionResult Index()
         {
 			ViewBag.Title = "Contact";
 
-			return View ();
+			return View();
         }
     }
 }

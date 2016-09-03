@@ -6,13 +6,17 @@ using System.Web.Mvc;
 
 namespace website.Controllers
 {
-    public class ResumeController : Controller
+    /// <summary>
+    /// Resume controller.
+	/// Display my resume.
+    /// </summary>
+	public class ResumeController : Controller
     {
         public ActionResult Index()
         {
 			ViewBag.Title = "Resume";
 
-			return View ();
+			return View();
         }
     }
 }

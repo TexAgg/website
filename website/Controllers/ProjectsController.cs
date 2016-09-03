@@ -8,9 +8,14 @@ using Newtonsoft.Json;
 
 namespace website.Controllers
 {
-    public class ProjectsController : Controller
+    /// <summary>
+    /// Projects controller.
+    /// </summary>
+	public class ProjectsController : Controller
     {
-        // Default action: display projects.
+		/// <summary>
+		/// Default action: display projects.
+		/// </summary>
 		public ActionResult Index()
         {
 			ViewBag.Title = "Projects";
@@ -21,24 +26,30 @@ namespace website.Controllers
 			string json = r.ReadToEnd();
 			dynamic data = JsonConvert.DeserializeObject(json);
 
-			return View ();
+			return View();
         }
 
+		/// <summary>
+		/// Redirect to Bubble.
+		/// </summary>
 		public ActionResult Bubble()
 		{
-			// Redirect to Bubble project.
 			return Redirect("~/Static/Bubble/index.html");
 		}
 
+		/// <summary>
+		/// Redirect to Triangle Calculator.
+		/// </summary>
 		public ActionResult TriangleCalculator()
 		{
-			// Redirect to Triangle Calculator.
 			return Redirect("~/Static/triangle_calculator/index.html");
 		}
 
+		/// <summary>
+		/// Redirect to Flap God 2.
+		/// </summary>
 		public ActionResult FlapGod2()
 		{
-			// Redirect to Flap God 2.
 			return Redirect("~/Static/flap_god2/index.html");
 		}
     }

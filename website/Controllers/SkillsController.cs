@@ -6,7 +6,11 @@ using System.Web.Mvc;
 
 namespace website.Controllers
 {
-    public class SkillsController : Controller
+    /// <summary>
+    /// Skills controller.
+	/// Display my skills.
+    /// </summary>
+	public class SkillsController : Controller
     {
         public ActionResult Index()
         {
@@ -31,7 +35,7 @@ namespace website.Controllers
 			};
 			ViewBag.FamiliarSkills = familiar_skills;
 				
-			return View ();
+			return View();
         }
     }
 }

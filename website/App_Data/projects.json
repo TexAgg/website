@@ -26,17 +26,17 @@
     "name" : "IlumiTherapy"
   }, {
     "about" : "Based on <a href='https://github.com/TexAgg/FlapGod'>Flap God,</a> Flap God 2 is a game about <a href='https://en.wikipedia.org/wiki/Pancake_sorting'>pancake sorting.</a> The object of the game is to get the pancakes sorted from smallest to largest in as few flips as possible. Works best on Google Chrome.",
-    "display" : "<img id='pancakes' class='proj' src='media/pancakes.PNG'></img>",
+    "display" : "<a href='~/Projects/FlapGod2'><img id='pancakes' class='proj' src='media/pancakes.PNG'></img><a>",
     "id" : "flap",
     "name" : "Flap God 2"
   }, {
     "about" : "Enter three sides of the triangle and, using Heron's formula, this will calculate the area and draw the triangle. Click <a href='https://github.com/TexAgg/TriangleCalculator'>here</a> for the source code.",
-    "display" : "<a href='https://dl.dropboxusercontent.com/u/222607174/triangle_calculator/index.html' target='_blank'><img id='triangle_img' class='proj' src='media/triangle.PNG'></img></a>",
+    "display" : "<a href='~/Projects/TriangleCalculator' target='_blank'><img id='triangle_img' class='proj' src='media/triangle.PNG'></img></a>",
     "id" : "triangle",
     "name" : "Triangle Calculator"
   }, {
     "about" : "Bubbles will float around aimlessly, heading the opposite direction whenever colliding with a wall or another bubble. Works best on Google Chrome. Click <a href='https://github.com/TexAgg/Bubble'>here</a> for the source code.",
-    "display" : "<a href='https://dl.dropboxusercontent.com/u/222607174/Bubble/index.html'><img id='bubble_img' class='proj' src='media/bubbles.PNG'></img></a>",
+    "display" : "<a href='~/Projects/Bubble'><img id='bubble_img' class='proj' src='media/bubbles.PNG'></img></a>",
     "id" : "bubble",
     "name" : "Bubble"
   }, {
