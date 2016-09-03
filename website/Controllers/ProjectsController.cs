@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.IO;
 using Newtonsoft.Json;
+using website.Models;
 
 namespace website.Controllers
 {
@@ -24,7 +25,8 @@ namespace website.Controllers
 			// http://stackoverflow.com/a/13297964/5415895
 			StreamReader r = new StreamReader("App_Data/projects.json");
 			string json = r.ReadToEnd();
-			dynamic data = JsonConvert.DeserializeObject(json);
+			Projects projects = JsonConvert.DeserializeObject<Projects>(json);
+			ViewBag.Projects = projects;
 
 			return View();
         }
