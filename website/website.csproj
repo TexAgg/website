@@ -83,6 +83,7 @@
     <Folder Include="Views\Contact\" />
     <Folder Include="Utilities\" />
     <Folder Include="Static\" />
+    <Folder Include="Static\Bubble\media\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -112,9 +113,6 @@
     <Content Include="Views\Resume\Index.cshtml" />
     <Content Include="Content\media\resume\main-1.png" />
     <Content Include="Views\Contact\Index.cshtml" />
-    <Content Include="Static\Bubble\index.html" />
-    <Content Include="Static\Bubble\script.js" />
-    <Content Include="Static\Bubble\style.css" />
     <Content Include="Static\flap_god2\index.html" />
     <Content Include="Static\flap_god2\media\eminem.jpg" />
     <Content Include="Static\flap_god2\media\pepe.png" />
@@ -126,6 +124,9 @@
     <Content Include="Static\triangle_calculator\images\red_triangle.png" />
     <Content Include="Static\triangle_calculator\scripts\triangle.js" />
     <Content Include="Static\triangle_calculator\style\styles.css" />
+    <Content Include="Static\Bubble\index.html" />
+    <Content Include="Static\Bubble\script.js" />
+    <Content Include="Static\Bubble\style.css" />
     <Content Include="Static\Bubble\media\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -142,6 +143,6 @@
     <None Include="Content\media\resume\main.pdf" />
     <None Include="Static\flap_god2\media\rapgod.mp3" />
     <None Include="Static\flap_god2\media\rules.txt" />
-    <None Include="Static\README.txt" />
+    <None Include="Static\README.md" />
   </ItemGroup>
 </Project>

@@ -10,7 +10,8 @@ namespace website.Controllers
 {
     public class ProjectsController : Controller
     {
-        public ActionResult Index()
+        // Default action: display projects.
+		public ActionResult Index()
         {
 			ViewBag.Title = "Projects";
 
@@ -22,5 +23,23 @@ namespace website.Controllers
 
 			return View ();
         }
+
+		public ActionResult Bubble()
+		{
+			// Redirect to Bubble project.
+			return Redirect("~/Static/Bubble/index.html");
+		}
+
+		public ActionResult TriangleCalculator()
+		{
+			// Redirect to Triangle Calculator.
+			return Redirect("~/Static/triangle_calculator/index.html");
+		}
+
+		public ActionResult FlapGod2()
+		{
+			// Redirect to Flap God 2.
+			return Redirect("~/Static/flap_god2/index.html");
+		}
     }
 }
