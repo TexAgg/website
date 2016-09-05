@@ -80,7 +80,6 @@
     <Folder Include="Views\Skills\" />
     <Folder Include="App_Data\" />
     <Folder Include="Views\Resume\" />
-    <Folder Include="Content\media\resume\" />
     <Folder Include="Views\Contact\" />
     <Folder Include="Utilities\" />
     <Folder Include="Static\" />
@@ -111,7 +110,6 @@
     <Content Include="Views\Projects\Index.cshtml" />
     <Content Include="Views\Skills\Index.cshtml" />
     <Content Include="Views\Resume\Index.cshtml" />
-    <Content Include="Content\media\resume\main-1.png" />
     <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -124,8 +122,6 @@
   </ProjectExtensions>
   <ItemGroup>
     <None Include="App_Data\projects.json" />
-    <None Include="Content\media\resume\README.md" />
-    <None Include="Content\media\resume\main.pdf" />
     <None Include="Static\README.md" />
   </ItemGroup>
 </Project>

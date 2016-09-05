@@ -50,6 +50,7 @@ print "Files downloaded."
 ################
 
 static_folder = "website/Static"
+print "Extracting zips."
 
 bubble_zip = zipfile.ZipFile(bubble_filename, 'r')
 bubble_zip.extractall(static_folder + "/Bubble")
@@ -65,3 +66,14 @@ triangle_calculator_zip = zipfile.ZipFile(triangle_calculator_filename, 'r')
 triangle_calculator_zip.extractall(static_folder + '/triangle_calculator')
 triangle_calculator_zip.close()
 os.remove(triangle_calculator_filename)
+
+print "Zips extracted."
+
+#####################
+# MOVE RESUME FILES #
+#####################
+
+resume_dir = "website/Content/media/resume"
+
+# http://stackoverflow.com/a/8858026/5415895
+os.rename()

@@ -2,9 +2,10 @@
 # Added by me
 
 *.zip
-website/static/Bubble/
-website/static/flap_god2
-website/static/triangle_calculator
+website/Static/Bubble/
+website/Static/flap_god2
+website/Static/triangle_calculator
+website/Content/media/resume
 
 # Created by https://www.gitignore.io/api/monodevelop,csharp
 
