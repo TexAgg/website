@@ -117,6 +117,7 @@
     <Content Include="Views\Skills\Index.cshtml" />
     <Content Include="Views\Resume\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Scripts\main.js" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
