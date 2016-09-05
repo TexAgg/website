@@ -74,6 +74,10 @@ print "Zips extracted."
 #####################
 
 resume_dir = "website/Content/media/resume"
+# http://stackoverflow.com/a/273227/5415895
+if not os.path.exists(resume_dir):
+	os.makedirs(resume_dir)
 
 # http://stackoverflow.com/a/8858026/5415895
-os.rename()
+os.rename(resume_filename, resume_dir + "/" + resume_filename)
+os.rename(resume_image_filename, resume_dir + "/" + resume_image_filename)
