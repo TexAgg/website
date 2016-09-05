@@ -6,4 +6,4 @@ The folders are:
 * [Flap God 2](https://www.dropbox.com/sh/6stjl7m9rz1xx57/AAAU0qrl8xxV-oMM7IPpaw_la?dl=0)
 * [Triangle Calculator](https://www.dropbox.com/sh/50gio906qo11zs7/AABlxjXt85QTe2ShjOVckXKQa?dl=0)
 
-Run `main.py` in the root directory to populate this directory.
+Run `download.py` in the root directory to populate this directory.
