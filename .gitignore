@@ -1,4 +1,11 @@
 
+# Added by me
+
+*.zip
+website/static/Bubble/
+website/static/flap_god2
+website/static/triangle_calculator
+
 # Created by https://www.gitignore.io/api/monodevelop,csharp
 
 ### MonoDevelop ###
