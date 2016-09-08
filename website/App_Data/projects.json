@@ -1,6 +1,6 @@
 {
   "item" : [ {
-    "about" : "<a href='https://bitbucket.org/gaikema/gaikbot/wiki/Home'>GaikBot</a> is a chatbot, sort of like the \"sequel\" to Dank Sinatra. He is written in C#, and uses the Microsoft Bot Framework to integrate him with various channels, including SMS, Facebook, and Telegram.",
+    "about" : "<a href='https://bitbucket.org/gaikema/gaikbot/wiki/Home'>GaikBot</a> is a chatbot, sort of like the \"sequel\" to Dank Sinatra. He is written in C#, and uses the Microsoft Bot Framework to integrate him with various channels, including SMS, Facebook, and Telegram.<br>",
     "display" : "<iframe src=\"https://webchat.botframework.com/embed/gaikbot?s=_kROGLOlwLY.cwA.KSI.dyBYCR7BCGOtIE5qj0kSN3V1BWreyDC1oxhn_vAtEG0\" style=\"height: 502px; max-height: 502px;\"></iframe>",
     "id" : "gaikbot",
     "name" : "GaikBot"
@@ -26,22 +26,22 @@
     "name" : "IlumiTherapy"
   }, {
     "about" : "Based on <a href='https://github.com/TexAgg/FlapGod'>Flap God,</a> Flap God 2 is a game about <a href='https://en.wikipedia.org/wiki/Pancake_sorting'>pancake sorting.</a> The object of the game is to get the pancakes sorted from smallest to largest in as few flips as possible. Works best on Google Chrome.",
-    "display" : "<a href='~/Projects/FlapGod2'><img id='pancakes' class='proj' src='media/pancakes.PNG'></img><a>",
+    "display" : "<a href='~/Projects/FlapGod2'><img id='pancakes' class='proj' src='~/Content/media/pancakes.PNG'></img></a>",
     "id" : "flap",
     "name" : "Flap God 2"
   }, {
     "about" : "Enter three sides of the triangle and, using Heron's formula, this will calculate the area and draw the triangle. Click <a href='https://github.com/TexAgg/TriangleCalculator'>here</a> for the source code.",
-    "display" : "<a href='~/Projects/TriangleCalculator' target='_blank'><img id='triangle_img' class='proj' src='media/triangle.PNG'></img></a>",
+    "display" : "<a href='~/Projects/TriangleCalculator' target='_blank'><img id='triangle_img' class='proj' src='~/Content/media/triangle.PNG'></img></a>",
     "id" : "triangle",
     "name" : "Triangle Calculator"
   }, {
     "about" : "Bubbles will float around aimlessly, heading the opposite direction whenever colliding with a wall or another bubble. Works best on Google Chrome. Click <a href='https://github.com/TexAgg/Bubble'>here</a> for the source code.",
-    "display" : "<a href='~/Projects/Bubble'><img id='bubble_img' class='proj' src='media/bubbles.PNG'></img></a>",
+    "display" : "<a href='~/Projects/Bubble'><img id='bubble_img' class='proj' src='~/Content/media/bubbles.PNG'></img></a>",
     "id" : "bubble",
     "name" : "Bubble"
   }, {
     "about" : "<a href='https://www.facebook.com/profile.php?id=100010461758967&fref=ts'>Dank Sinatra</a> is a Facebook chatbot. He is written in JavaScript (using Node.js) and a smidgen of Python. Type '\\help' to see a list of his available commands. He also pushes relevant messages to a database, sends me email updates, and posts weather updates every 3 hours, but new features are constantly being added. I hope to one day make him a full-on companion, such as Siri or Watson (albiet not as realistic). For more information, see <a href=\"https://bitbucket.org/gaikema/danksinatra/wiki/Home\">here.</a>",
-    "display" : "<a href='https://www.facebook.com/profile.php?id=100010461758967&fref=ts'><img class='proj' src='media/fb_icon_325x325.png'></img></a></a>",
+    "display" : "<a href='https://www.facebook.com/profile.php?id=100010461758967&fref=ts'><img class='proj' src='~/Content/media/fb_icon_325x325.png'></img></a></a>",
     "id" : "dank",
     "name" : "Dank Sinatra"
   } ]

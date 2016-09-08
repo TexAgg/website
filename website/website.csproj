@@ -134,6 +134,10 @@
     <Content Include="Static\Bubble\script.js" />
     <Content Include="Static\Bubble\style.css" />
     <Content Include="Static\Bubble\media\logo.png" />
+    <Content Include="Content\media\bubbles.PNG" />
+    <Content Include="Content\media\triangle.PNG" />
+    <Content Include="Content\media\pancakes.PNG" />
+    <Content Include="Content\media\fb_icon_325x325.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
