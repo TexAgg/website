@@ -19,6 +19,7 @@ namespace website.Controllers
 		public ActionResult Index()
 		{
 			ViewBag.Title = "Matt Gaikema";
+			ViewBag.Section = "about";
 
 			return View();
 		}

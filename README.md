@@ -14,5 +14,6 @@ This must be done,
 otherwise certain files will be missing and you will get 404 errors.
 
 ### Running
-I developed this on Linux using Mono,
-so I honestly don't know if it will run on Windows (thought it should).
+I developed this on Linux using Mono.
+It runs on Windows, but only after I changed the target runtime from 4.5 to 4.0, then to 3.5, then back to 4.5 in Visual Studio.
+I have no idea why this worked.

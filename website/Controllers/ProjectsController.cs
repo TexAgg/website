@@ -20,6 +20,7 @@ namespace website.Controllers
 		public ActionResult Index()
         {
 			ViewBag.Title = "Projects";
+			ViewBag.Resume = "projects";
 
 			// TODO: Read the JSON file with the projects.
 			// http://stackoverflow.com/a/13297964/5415895

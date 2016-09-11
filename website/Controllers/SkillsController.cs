@@ -15,6 +15,7 @@ namespace website.Controllers
         public ActionResult Index()
         {
 			ViewBag.Title = "Skills";
+			ViewBag.Section = "skills";
 
 			// A list of skills I am proficient in.
 			List<String> proficient_skills = new List<String> {

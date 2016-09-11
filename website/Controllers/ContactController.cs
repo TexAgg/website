@@ -15,6 +15,7 @@ namespace website.Controllers
         public ActionResult Index()
         {
 			ViewBag.Title = "Contact";
+			ViewBag.Title = "contact";
 
 			return View();
         }
