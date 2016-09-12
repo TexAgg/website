@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,6 +11,18 @@
     <AssemblyName>website</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Description>My personal website, rewritten for the DOTNET framework.</Description>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +34,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <DocumentationFile>bin\website.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -34,19 +48,21 @@
         <Command type="BeforeBuild" command="python download.py" workingdir="${SolutionDir}" />
       </CustomCommands>
     </CustomCommands>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Web.Routing" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -75,21 +91,9 @@
     <Reference Include="RestSharp">
       <HintPath>..\packages\RestSharp.105.2.3\lib\net45\RestSharp.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\" />
-    <Folder Include="Models\" />
-    <Folder Include="Scripts\" />
-    <Folder Include="Content\styles\" />
-    <Folder Include="Content\media\" />
-    <Folder Include="Views\Projects\" />
-    <Folder Include="Views\Skills\" />
-    <Folder Include="App_Data\" />
-    <Folder Include="Views\Resume\" />
-    <Folder Include="Views\Contact\" />
-    <Folder Include="Utilities\" />
-    <Folder Include="Static\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -139,6 +143,10 @@
     <Content Include="Content\media\pancakes.PNG" />
     <Content Include="Content\media\fb_icon_325x325.png" />
   </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <MonoDevelop>
@@ -146,6 +154,22 @@
         <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
       </Properties>
     </MonoDevelop>
+    <VisualStudio>
+      <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50403/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
   </ProjectExtensions>
   <ItemGroup>
     <None Include="App_Data\projects.json" />
@@ -155,4 +179,6 @@
     <None Include="Static\flap_god2\media\rules.txt" />
     <None Include="App_Data\skills.xml" />
   </ItemGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
 </Project>

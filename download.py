@@ -34,7 +34,7 @@ resume_image_filename = "main.png"
 # DOWNLOAD FILES #
 ##################
 
-print "Downloading files."
+print("Downloading files.")
 
 urllib.urlretrieve(bubble, bubble_filename)
 urllib.urlretrieve(flapgod2, flapgod2_filename)
@@ -43,14 +43,14 @@ urllib.urlretrieve(triangle_calculator, triangle_calculator_filename)
 urllib.urlretrieve(resume_image, resume_image_filename)
 urllib.urlretrieve(resume, resume_filename)
 
-print "Files downloaded."
+print("Files downloaded.")
 
 ################
 # EXTRACT ZIPS #
 ################
 
 static_folder = "website/Static"
-print "Extracting zips."
+print("Extracting zips.")
 
 bubble_zip = zipfile.ZipFile(bubble_filename, 'r')
 bubble_zip.extractall(static_folder + "/Bubble")
@@ -67,7 +67,7 @@ triangle_calculator_zip.extractall(static_folder + '/triangle_calculator')
 triangle_calculator_zip.close()
 os.remove(triangle_calculator_filename)
 
-print "Zips extracted."
+print("Zips extracted.")
 
 #####################
 # MOVE RESUME FILES #

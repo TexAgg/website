@@ -23,7 +23,8 @@ namespace website.Controllers
 
 			// TODO: Read the JSON file with the projects.
 			// http://stackoverflow.com/a/13297964/5415895
-			StreamReader r = new StreamReader("App_Data/projects.json");
+			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath;
+			StreamReader r = new StreamReader(filePath + Path.DirectorySeparatorChar + "App_Data" + Path.DirectorySeparatorChar +  "projects.json");
 			string json = r.ReadToEnd();
 			Projects projects = JsonConvert.DeserializeObject<Projects>(json);
 			ViewBag.Projects = projects;
