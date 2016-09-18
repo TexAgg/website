@@ -46,7 +46,7 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult TriangleCalculator()
 		{
-			return Redirect("~/Static/triangle_calculator/index.html");
+			return Redirect("~/Static/triangle_calculator/triangle_calculator/index.html");
 		}
 
 		/// <summary>
@@ -54,7 +54,7 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult FlapGod2()
 		{
-			return Redirect("~/Static/flap_god2/index.html");
+			return Redirect("~/Static/flap_god2/flap_god2/index.html");
 		}
     }
 }

@@ -138,6 +138,10 @@
     <Content Include="Static\flap_god2\flap_god2\scripts\game.js" />
     <Content Include="Static\flap_god2\flap_god2\scripts\scoring.js" />
     <Content Include="Static\flap_god2\flap_god2\styles\style.css" />
+    <Content Include="Static\triangle_calculator\triangle_calculator\index.html" />
+    <Content Include="Static\triangle_calculator\triangle_calculator\images\red_triangle.png" />
+    <Content Include="Static\triangle_calculator\triangle_calculator\scripts\triangle.js" />
+    <Content Include="Static\triangle_calculator\triangle_calculator\style\styles.css" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -186,6 +190,10 @@
     <None Include="Static\flap_god2\README.md" />
     <None Include="Static\flap_god2\flap_god2\media\rapgod.mp3" />
     <None Include="Static\flap_god2\flap_god2\media\rules.txt" />
+    <None Include="Static\triangle_calculator\.git" />
+    <None Include="Static\triangle_calculator\.gitattributes" />
+    <None Include="Static\triangle_calculator\LICENSE" />
+    <None Include="Static\triangle_calculator\README.md" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
