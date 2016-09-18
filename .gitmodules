@@ -1,0 +1,9 @@
+[submodule "website/Static/Bubble"]
+	path = website/Static/Bubble
+	url = https://github.com/TexAgg/Bubble.git
+[submodule "website/Static/flap_god2"]
+	path = website/Static/flap_god2
+	url = https://github.com/TexAgg/Flap-God-2.git
+[submodule "website/Static/triangle_calculator"]
+	path = website/Static/triangle_calculator
+	url = https://github.com/TexAgg/TriangleCalculator.git
