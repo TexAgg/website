@@ -2,9 +2,6 @@
 # Added by me
 
 *.zip
-website/Static/Bubble/
-website/Static/flap_god2
-website/Static/triangle_calculator
 website/Content/media/resume
 
 # Created by https://www.gitignore.io/api/monodevelop,csharp

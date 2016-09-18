@@ -123,25 +123,21 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Scripts\main.js" />
     <Content Include="Content\media\resume\main.png" />
-    <Content Include="Static\triangle_calculator\index.html" />
-    <Content Include="Static\triangle_calculator\images\red_triangle.png" />
-    <Content Include="Static\triangle_calculator\scripts\triangle.js" />
-    <Content Include="Static\triangle_calculator\style\styles.css" />
-    <Content Include="Static\flap_god2\index.html" />
-    <Content Include="Static\flap_god2\media\eminem.jpg" />
-    <Content Include="Static\flap_god2\media\pepe.png" />
-    <Content Include="Static\flap_god2\media\rules.PNG" />
-    <Content Include="Static\flap_god2\scripts\game.js" />
-    <Content Include="Static\flap_god2\scripts\scoring.js" />
-    <Content Include="Static\flap_god2\styles\style.css" />
-    <Content Include="Static\Bubble\index.html" />
-    <Content Include="Static\Bubble\script.js" />
-    <Content Include="Static\Bubble\style.css" />
-    <Content Include="Static\Bubble\media\logo.png" />
     <Content Include="Content\media\bubbles.PNG" />
     <Content Include="Content\media\triangle.PNG" />
     <Content Include="Content\media\pancakes.PNG" />
     <Content Include="Content\media\fb_icon_325x325.png" />
+    <Content Include="Static\Bubble\index.html" />
+    <Content Include="Static\Bubble\script.js" />
+    <Content Include="Static\Bubble\style.css" />
+    <Content Include="Static\Bubble\media\logo.png" />
+    <Content Include="Static\flap_god2\flap_god2\index.html" />
+    <Content Include="Static\flap_god2\flap_god2\media\eminem.jpg" />
+    <Content Include="Static\flap_god2\flap_god2\media\pepe.png" />
+    <Content Include="Static\flap_god2\flap_god2\media\rules.PNG" />
+    <Content Include="Static\flap_god2\flap_god2\scripts\game.js" />
+    <Content Include="Static\flap_god2\flap_god2\scripts\scoring.js" />
+    <Content Include="Static\flap_god2\flap_god2\styles\style.css" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -175,9 +171,21 @@
     <None Include="App_Data\projects.json" />
     <None Include="Static\README.md" />
     <None Include="Content\media\resume\main.pdf" />
-    <None Include="Static\flap_god2\media\rapgod.mp3" />
-    <None Include="Static\flap_god2\media\rules.txt" />
     <None Include="App_Data\skills.xml" />
+    <None Include="Static\Bubble\.git" />
+    <None Include="Static\Bubble\.gitattributes" />
+    <None Include="Static\Bubble\.gitignore" />
+    <None Include="Static\Bubble\LICENSE" />
+    <None Include="Static\Bubble\README.md" />
+    <None Include="Static\flap_god2\.floo" />
+    <None Include="Static\flap_god2\.flooignore" />
+    <None Include="Static\flap_god2\.git" />
+    <None Include="Static\flap_god2\.gitattributes" />
+    <None Include="Static\flap_god2\.gitignore" />
+    <None Include="Static\flap_god2\LICENSE" />
+    <None Include="Static\flap_god2\README.md" />
+    <None Include="Static\flap_god2\flap_god2\media\rapgod.mp3" />
+    <None Include="Static\flap_god2\flap_god2\media\rules.txt" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
