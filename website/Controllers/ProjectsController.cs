@@ -22,7 +22,6 @@ namespace website.Controllers
 			ViewBag.Title = "Projects";
 			ViewBag.Resume = "projects";
 
-			// TODO: Read the JSON file with the projects.
 			// http://stackoverflow.com/a/13297964/5415895
 			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath;
 			StreamReader r = new StreamReader(filePath + Path.DirectorySeparatorChar + "App_Data" + Path.DirectorySeparatorChar +  "projects.json");
