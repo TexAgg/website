@@ -12,7 +12,10 @@ namespace website.Controllers
     /// </summary>
 	public class ContactController : Controller
     {
-        public ActionResult Index()
+       /// <summary>
+       /// Main route of the contact controller.
+       /// </summary>
+		public ActionResult Index()
         {
 			ViewBag.Title = "Contact";
 			ViewBag.Title = "contact";

@@ -36,6 +36,9 @@ namespace website.Models
 			/// HTML element id.
 			/// </summary>
 			public string id { get; set; }
+			/// <summary>
+			/// The name of the project.
+			/// </summary>
 			public string name { get; set; }
 		}
 	}
