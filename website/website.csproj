@@ -35,6 +35,11 @@
     <ConsolePause>false</ConsolePause>
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>bin\website.xml</DocumentationFile>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="Custom" name="Download Resume" command="python download.py" workingdir="${SolutionDir}" />
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
