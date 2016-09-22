@@ -7,6 +7,18 @@ This is more for fun and probably will not be hosted.
 
 ## Instructions
 
+### Git
+When you clone the repository via git,
+run
+```
+git clone --recursive https://github.com/TexAgg/website.git
+```
+to get all the git submodules.
+Also, to update submodules to their latest versions, run
+```
+git submodule update --recursive --remote
+```
+
 ### Building
 To download my resume and static web projects into the correct directories,
 run `download.py`.
