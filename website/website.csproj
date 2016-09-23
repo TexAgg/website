@@ -39,6 +39,7 @@
       <CustomCommands>
         <Command type="Custom" name="Download Resume" command="python download.py" workingdir="${SolutionDir}" />
         <Command type="AfterBuild" command="tsc" workingdir="${ProjectDir}/Static/Bubble" />
+        <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/Stoplight" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -148,6 +149,12 @@
     <Content Include="Static\triangle_calculator\triangle_calculator\scripts\triangle.js" />
     <Content Include="Static\triangle_calculator\triangle_calculator\style\styles.css" />
     <Content Include="Static\Bubble\build\script.js" />
+    <Content Include="Static\Stoplight\index.html" />
+    <Content Include="Static\Stoplight\main.css" />
+    <Content Include="Static\Stoplight\build\Circle.js" />
+    <Content Include="Static\Stoplight\build\bundle.js" />
+    <Content Include="Static\Stoplight\build\bundle.min.js" />
+    <Content Include="Static\Stoplight\build\main.js" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -199,6 +206,13 @@
     <None Include="Static\triangle_calculator\.gitattributes" />
     <None Include="Static\triangle_calculator\LICENSE" />
     <None Include="Static\triangle_calculator\README.md" />
+    <None Include="Static\Stoplight\.git" />
+    <None Include="Static\Stoplight\.gitignore" />
+    <None Include="Static\Stoplight\Circle.ts" />
+    <None Include="Static\Stoplight\README.md" />
+    <None Include="Static\Stoplight\build.py" />
+    <None Include="Static\Stoplight\main.ts" />
+    <None Include="Static\Stoplight\tsconfig.json" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />

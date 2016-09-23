@@ -7,3 +7,6 @@
 [submodule "website/Static/triangle_calculator"]
 	path = website/Static/triangle_calculator
 	url = https://github.com/TexAgg/TriangleCalculator.git
+[submodule "website/Static/Stoplight"]
+	path = website/Static/Stoplight
+	url = https://gaikema@bitbucket.org/gaikema/stoplight.git

@@ -55,5 +55,13 @@ namespace website.Controllers
 		{
 			return Redirect("~/Static/flap_god2/flap_god2/index.html");
 		}
+
+		/// <summary>
+		/// Redirect to stoplight.
+		/// </summary>
+		public ActionResult Stoplight()
+		{
+			return Redirect ("~/Static/Stoplight/index.html");
+		}
     }
 }
