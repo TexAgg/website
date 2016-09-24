@@ -40,6 +40,10 @@ namespace website.Models
 			/// The name of the project.
 			/// </summary>
 			public string name { get; set; }
+			/// <summary>
+			/// The tags describing each project.
+			/// </summary>
+			public List<object> tags { get; set; }
 		}
 	}
 }

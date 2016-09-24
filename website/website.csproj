@@ -111,7 +111,6 @@
     <Compile Include="Models\Project.cs" />
     <Compile Include="Controllers\ResumeController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
-    <Compile Include="Utilities\Firebase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -218,5 +217,6 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
     <Folder Include="Content\media\contact\" />
+    <Folder Include="Utilities\" />
   </ItemGroup>
 </Project>
