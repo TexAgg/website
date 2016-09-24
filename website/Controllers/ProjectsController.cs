@@ -11,6 +11,7 @@ namespace website.Controllers
 {
     /// <summary>
     /// Projects controller.
+	/// Displays all my projects and also handles routes to some small javascript projects.
     /// </summary>
 	public class ProjectsController : Controller
     {
@@ -57,7 +58,7 @@ namespace website.Controllers
 		}
 
 		/// <summary>
-		/// Redirect to stoplight.
+		/// Redirect to Stoplight.
 		/// </summary>
 		public ActionResult Stoplight()
 		{

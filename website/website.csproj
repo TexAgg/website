@@ -217,6 +217,5 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
     <Folder Include="Content\media\contact\" />
-    <Folder Include="Utilities\" />
   </ItemGroup>
 </Project>
