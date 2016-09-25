@@ -111,6 +111,8 @@
     <Compile Include="Models\Project.cs" />
     <Compile Include="Controllers\ResumeController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\ResearchController.cs" />
+    <Compile Include="Controllers\HackathonsController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -154,6 +156,8 @@
     <Content Include="Static\Stoplight\build\bundle.js" />
     <Content Include="Static\Stoplight\build\bundle.min.js" />
     <Content Include="Static\Stoplight\build\main.js" />
+    <Content Include="Views\Research\Index.cshtml" />
+    <Content Include="Views\Hackathons\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -187,7 +191,6 @@
     <None Include="App_Data\projects.json" />
     <None Include="Static\README.md" />
     <None Include="Content\media\resume\main.pdf" />
-    <None Include="App_Data\skills.xml" />
     <None Include="Static\Bubble\.git" />
     <None Include="Static\Bubble\.gitignore" />
     <None Include="Static\Bubble\LICENSE" />
@@ -217,5 +220,7 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
     <Folder Include="Content\media\contact\" />
+    <Folder Include="Views\Research\" />
+    <Folder Include="Views\Hackathons\" />
   </ItemGroup>
 </Project>

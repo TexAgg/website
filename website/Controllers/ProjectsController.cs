@@ -21,7 +21,7 @@ namespace website.Controllers
 		public ActionResult Index()
         {
 			ViewBag.Title = "Projects";
-			ViewBag.Resume = "projects";
+			ViewBag.Section = "projects";
 
 			// http://stackoverflow.com/a/13297964/5415895
 			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath;

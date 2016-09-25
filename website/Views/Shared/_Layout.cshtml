@@ -46,6 +46,9 @@
 		</header>
 	</div><!--jumbotron-->
 
+	@*
+		Navbar.
+	*@
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
@@ -58,7 +61,16 @@
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav nav-tabs">
 				<li role="presentation"><a href="~/">About</a></li>
-				<li role="presentation"><a href="~/Projects">Projects</a></li>
+				<li role="presentation" class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+						Projects <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li role="presentation"><a href="~/Projects">Projects</a></li>
+						<li role="presentation"><a href="~/Research">Research</a></li>
+						<li role="presentation"><a href="~/Hackathons">Hackathons</a></li>
+					</ul>
+				</li><!--Dropdown menu-->
 				<li role="presentation"><a href="~/Skills">Skills</a></li>
 				<li role="presentation"><a href="~/Resume">Resume</a></li>
 				<li role="presentation"><a href="~/Contact">Contact Me</a></li>
