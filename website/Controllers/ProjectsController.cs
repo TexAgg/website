@@ -28,9 +28,9 @@ namespace website.Controllers
 			StreamReader r = new StreamReader(filePath + Path.DirectorySeparatorChar + "App_Data" + Path.DirectorySeparatorChar +  "projects.json");
 			string json = r.ReadToEnd();
 			Projects projects = JsonConvert.DeserializeObject<Projects>(json);
-			ViewBag.Projects = projects;
+			//ViewBag.Projects = projects;
 
-			return View();
+			return View(projects);
         }
 
 		/// <summary>

@@ -1,8 +1,9 @@
-﻿@model website.Controllers.ProjectsController
+﻿@using website.Models
+@model Projects
 
 <div class="sidebar span4 hidden-phone">
 	<ul id="sidebar-menu" class="nav nav-stacked list-group">
-		@foreach(var i in @ViewBag.Projects.item)
+		@foreach(var i in @Model.item)
 		{
 			<li class='list-group-item'><a href="#@i.id">@i.name</a></li>
 		}
@@ -14,7 +15,7 @@
 		<h2>@ViewBag.Title</h2>
 	</div>
 	<div class="panel-group">
-		@foreach(var i in @ViewBag.Projects.item)
+		@foreach(var i in @Model.item)
 		{
 			var @id = @i.id;
 
