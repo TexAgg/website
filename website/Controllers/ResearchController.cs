@@ -14,7 +14,7 @@ namespace website.Controllers
     {
         public ActionResult Index()
         {
-			return View ();
+			return View();
         }
     }
 }

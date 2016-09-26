@@ -114,6 +114,7 @@
     <Compile Include="Controllers\HackathonsController.cs" />
     <Compile Include="Models\Projects.cs" />
     <Compile Include="Models\Hackathons.cs" />
+    <Compile Include="Models\Skills.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

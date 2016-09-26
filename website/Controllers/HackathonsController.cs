@@ -14,9 +14,7 @@ namespace website.Controllers
     {
         public ActionResult Index()
         {
-			ViewBag.Section = "hackathons";
-
-			return View ();
+			return View();
         }
     }
 }
