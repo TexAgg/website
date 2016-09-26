@@ -20,7 +20,6 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult Index()
         {
-			ViewBag.Title = "Projects";
 			ViewBag.Section = "projects";
 
 			// http://stackoverflow.com/a/13297964/5415895

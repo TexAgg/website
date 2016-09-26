@@ -43,7 +43,7 @@ namespace website.Models
 			/// <summary>
 			/// The tags describing each project.
 			/// </summary>
-			public List<object> tags { get; set; }
+			public List<string> tags { get; set; }
 		}
 	}
 }

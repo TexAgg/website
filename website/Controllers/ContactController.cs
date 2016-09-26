@@ -17,7 +17,6 @@ namespace website.Controllers
        /// </summary>
 		public ActionResult Index()
         {
-			ViewBag.Title = "Contact";
 			ViewBag.Section = "contact";
 
 			return View();

@@ -12,7 +12,7 @@
 
 <div id="projects" class="container panel panel-default">
 	<div class="panel-heading">
-		<h2>@ViewBag.Title</h2>
+		<h2>@ViewContext.RouteData.Values["Controller"]</h2>
 	</div>
 	<div class="panel-group">
 		@foreach(var i in @Model.item)
@@ -29,7 +29,7 @@
 				<div class="panel-body">
 					@* http://stackoverflow.com/a/4282073/5415895 *@
 					@Html.Raw(@i.about)
-
+					<br>
 					@if(@i.display != null)
 					{
 						@Html.Raw(@i.display)
