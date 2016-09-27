@@ -11,15 +11,15 @@ namespace website.Models
 		/// <summary>
 		/// Languages I am proficient in.
 		/// </summary>
-		public List<string> Proficient { get; set; }
+		public List<string> proficient { get; set; }
 		/// <summary>
 		/// Languages I am familiar with.
 		/// </summary>
-		public List<string> Familiar { get; set; }
+		public List<string> familiar { get; set; }
 		/// <summary>
 		/// Software I know.
 		/// </summary>
-		public List<string> Software { get; set; }
+		public List<string> software { get; set; }
 	}
 }
 

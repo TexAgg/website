@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using website.Models;
+using website.Utilities;
+using System.IO;
 
 namespace website.Controllers
 {
@@ -17,12 +19,12 @@ namespace website.Controllers
         {
 			// Hard-code my skills into a Skills object.
 			Skills skills = new Skills {
-				Proficient = new List<string> {
+				proficient = new List<string> {
 					"C++",
 					"LaTeX",
 					"R"
 				},
-				Familiar = new List<String> {
+				familiar = new List<String> {
 					"Javascript",
 					"Java",
 					"Mathematica",
@@ -30,7 +32,7 @@ namespace website.Controllers
 					"PHP",
 					"Python"
 				},
-				Software = new List<string>{
+				software = new List<string>{
 					"Git",
 					"Linux",
 					"CMake",
@@ -39,6 +41,9 @@ namespace website.Controllers
 					"NodeJS"
 				}
 			};
+
+			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath;
+			JsonHelpers.WriteJsonToFile(filePath + Path.DirectorySeparatorChar + "App_Data" + Path.DirectorySeparatorChar + "skills.json", skills);
 					
 			return View(skills);
         }

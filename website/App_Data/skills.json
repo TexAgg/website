@@ -1,0 +1,23 @@
+{
+  "proficient": [
+    "C++",
+    "LaTeX",
+    "R"
+  ],
+  "familiar": [
+    "Javascript",
+    "Java",
+    "Mathematica",
+    "C#",
+    "PHP",
+    "Python"
+  ],
+  "software": [
+    "Git",
+    "Linux",
+    "CMake",
+    "ASP.NET MVC",
+    "Flask",
+    "NodeJS"
+  ]
+}

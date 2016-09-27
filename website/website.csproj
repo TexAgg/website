@@ -115,6 +115,8 @@
     <Compile Include="Models\Projects.cs" />
     <Compile Include="Models\Hackathons.cs" />
     <Compile Include="Models\Skills.cs" />
+    <Compile Include="Models\Research.cs" />
+    <Compile Include="Utilities\JsonHelpers.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -217,6 +219,9 @@
     <None Include="Static\Stoplight\build.py" />
     <None Include="Static\Stoplight\main.ts" />
     <None Include="Static\Stoplight\tsconfig.json" />
+    <None Include="App_Data\README.txt" />
+    <None Include="App_Data\hackathons.json" />
+    <None Include="App_Data\skills.json" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
@@ -224,5 +229,6 @@
     <Folder Include="Content\media\contact\" />
     <Folder Include="Views\Research\" />
     <Folder Include="Views\Hackathons\" />
+    <Folder Include="Utilities\" />
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace website
+namespace website.Models
 {
 	/// <summary>
 	/// Hackathons data model.
@@ -21,15 +21,19 @@ namespace website
 			/// <summary>
 			/// Name of the hackathon.
 			/// </summary>
-			public string Name { get; set; }
+			public string name { get; set; }
 			/// <summary>
 			/// The year the hackathon took place.
 			/// </summary>
-			public int Year { get; set; }
+			public int year { get; set; }
 			/// <summary>
 			/// An HTML string talking about the project.
 			/// </summary>
-			public string AboutHTML { get; set; }
+			public string aboutHTML { get; set; }
+			/// <summary>
+			/// Tags describing the project.
+			/// </summary>
+			public List<string> tags { get; set; }
 		}
 	}
 }

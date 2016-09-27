@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using website.Models;
 
 namespace website.Controllers
 {
@@ -14,7 +15,11 @@ namespace website.Controllers
     {
         public ActionResult Index()
         {
-			return View();
+			Research research = new Research {
+				
+			};
+
+			return View(research);
         }
     }
 }
