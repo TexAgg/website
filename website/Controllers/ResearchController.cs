@@ -7,6 +7,7 @@ using website.Models;
 using website.Utilities;
 using System.Web.UI.WebControls;
 using System.IO;
+using website.Data;
 
 namespace website.Controllers
 {
@@ -18,14 +19,7 @@ namespace website.Controllers
     {
         public ActionResult Index()
         {
-			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath 
-				+ Path.DirectorySeparatorChar 
-				+ "App_Data" 
-				+ Path.DirectorySeparatorChar 
-				+  "research.json";
-			Research research = JsonHelpers.ReadJsonFromFile<Research>(filePath);
-
-			return View(research);
+			return View(ResearchRepository.GetResearch());
         }
     }
 }

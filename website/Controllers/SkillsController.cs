@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using website.Models;
 using website.Utilities;
 using System.IO;
+using website.Data;
 
 namespace website.Controllers
 {
@@ -16,15 +17,8 @@ namespace website.Controllers
 	public class SkillsController : Controller
     {
         public ActionResult Index()
-        {
-			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath 
-				+ Path.DirectorySeparatorChar 
-				+ "App_Data" 
-				+ Path.DirectorySeparatorChar 
-				+ "skills.json";
-			Skills skills = JsonHelpers.ReadJsonFromFile<Skills>(filePath);
-					
-			return View(skills);
+        {					
+			return View(SkillsRepository.GetSkills());
         }
     }
 }

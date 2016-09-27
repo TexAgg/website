@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using website.Models;
 using System.IO;
 using website.Utilities;
+using website.Data;
 
 namespace website.Controllers
 {
@@ -17,16 +18,8 @@ namespace website.Controllers
 	public class HackathonsController : Controller
     {
         public ActionResult Index()
-        {			
-			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath 
-				+ Path.DirectorySeparatorChar 
-				+ "App_Data" 
-				+ Path.DirectorySeparatorChar 
-				+  "hackathons.json";
-			// http://stackoverflow.com/a/16921677/5415895
-			Hackathons hackathons = JsonHelpers.ReadJsonFromFile<Hackathons>(filePath);
-
-			return View(hackathons);
+        {
+			return View(HackathonsRepository.GetHackathons());
         }
     }
 }

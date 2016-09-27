@@ -117,6 +117,10 @@
     <Compile Include="Models\Skills.cs" />
     <Compile Include="Models\Research.cs" />
     <Compile Include="Utilities\JsonHelpers.cs" />
+    <Compile Include="Data\HackathonsRepository.cs" />
+    <Compile Include="Data\ProjectsRepository.cs" />
+    <Compile Include="Data\ResearchRepository.cs" />
+    <Compile Include="Data\SkillsRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -223,6 +227,7 @@
     <None Include="App_Data\hackathons.json" />
     <None Include="App_Data\skills.json" />
     <None Include="App_Data\research.json" />
+    <None Include="Data\README.txt" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
@@ -231,5 +236,6 @@
     <Folder Include="Views\Research\" />
     <Folder Include="Views\Hackathons\" />
     <Folder Include="Utilities\" />
+    <Folder Include="Data\" />
   </ItemGroup>
 </Project>
