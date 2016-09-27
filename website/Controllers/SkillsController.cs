@@ -16,9 +16,22 @@ namespace website.Controllers
     /// </summary>
 	public class SkillsController : Controller
     {
-        public ActionResult Index()
+		/// <summary>
+		/// The skills repository.
+		/// </summary>
+		private SkillsRepository _skillsRepository = null;
+
+		/// <summary>
+		/// Initializes a new instance of the <see cref="website.Controllers.SkillsController"/> class.
+		/// </summary>
+		public SkillsController()
+		{
+			_skillsRepository = new SkillsRepository();
+		}
+
+		public ActionResult Index()
         {					
-			return View(SkillsRepository.GetSkills());
+			return View(_skillsRepository.GetSkills());
         }
     }
 }

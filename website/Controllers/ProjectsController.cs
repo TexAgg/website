@@ -11,18 +11,31 @@ using website.Data;
 
 namespace website.Controllers
 {
-    /// <summary>
+	/// <summary>
     /// Projects controller.
 	/// Displays all my projects and also handles routes to some small javascript projects.
     /// </summary>
 	public class ProjectsController : Controller
     {
 		/// <summary>
+		/// The projects repository.
+		/// </summary>
+		private ProjectsRepository _projectsRepository = null;
+
+		/// <summary>
+		/// Initializes a new instance of the <see cref="website.Controllers.ProjectsController"/> class.
+		/// </summary>
+		public ProjectsController()
+		{
+			_projectsRepository = new ProjectsRepository();
+		}
+
+		/// <summary>
 		/// Default action: display projects.
 		/// </summary>
 		public ActionResult Index()
         {
-			return View(ProjectsRepository.GetProjects());
+			return View(_projectsRepository.GetProjects());
         }
 
 		/// <summary>

@@ -8,13 +8,13 @@ namespace website.Data
 	/// <summary>
 	/// Projects repository.
 	/// </summary>
-	public static class ProjectsRepository
+	public class ProjectsRepository
 	{
 		/// <summary>
 		/// Gets the projects.
 		/// </summary>
 		/// <returns>The projects model object.</returns>
-		public static Projects GetProjects()
+		public Projects GetProjects()
 		{
 			// http://stackoverflow.com/a/13297964/5415895
 			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath 

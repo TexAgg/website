@@ -8,13 +8,13 @@ namespace website.Data
 	/// <summary>
 	/// Research repository.
 	/// </summary>
-	public static class ResearchRepository
+	public class ResearchRepository
 	{
 		/// <summary>
 		/// Gets the research.
 		/// </summary>
 		/// <returns>The research model object.</returns>
-		public static Research GetResearch()
+		public Research GetResearch()
 		{
 			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath 
 				+ Path.DirectorySeparatorChar 

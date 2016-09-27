@@ -8,13 +8,13 @@ namespace website.Data
 	/// <summary>
 	/// Skills repository.
 	/// </summary>
-	public static class SkillsRepository
+	public class SkillsRepository
 	{
 		/// <summary>
 		/// Gets the skills.
 		/// </summary>
 		/// <returns>The skills model object.</returns>
-		public static Skills GetSkills()
+		public Skills GetSkills()
 		{
 			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath 
 				+ Path.DirectorySeparatorChar 

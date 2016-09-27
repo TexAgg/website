@@ -8,13 +8,13 @@ namespace website.Data
 	/// <summary>
 	/// Hackathons repository.
 	/// </summary>
-	public static class HackathonsRepository
+	public class HackathonsRepository
 	{
 		/// <summary>
 		/// Gets the hackathons.
 		/// </summary>
 		/// <returns>The hackathons model object.</returns>
-		public static Hackathons GetHackathons()
+		public Hackathons GetHackathons()
 		{
 			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath 
 				+ Path.DirectorySeparatorChar 

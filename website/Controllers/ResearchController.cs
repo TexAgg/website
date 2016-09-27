@@ -17,9 +17,22 @@ namespace website.Controllers
     /// </summary>
 	public class ResearchController : Controller
     {
-        public ActionResult Index()
+		/// <summary>
+		/// The research repository.
+		/// </summary>
+		private ResearchRepository _researchRepository = null;
+
+		/// <summary>
+		/// Initializes a new instance of the <see cref="website.Controllers.ResearchController"/> class.
+		/// </summary>
+		public ResearchController()
+		{
+			_researchRepository = new ResearchRepository();
+		}
+
+		public ActionResult Index()
         {
-			return View(ResearchRepository.GetResearch());
+			return View(_researchRepository.GetResearch());
         }
     }
 }

@@ -17,9 +17,22 @@ namespace website.Controllers
     /// </summary>
 	public class HackathonsController : Controller
     {
-        public ActionResult Index()
+		/// <summary>
+		/// The hackathons repository.
+		/// </summary>
+		private HackathonsRepository _hackathonsRepository = null;
+
+		/// <summary>
+		/// Initializes a new instance of the <see cref="website.Controllers.HackathonsController"/> class.
+		/// </summary>
+		public HackathonsController()
+		{
+			_hackathonsRepository = new HackathonsRepository();
+		}
+
+		public ActionResult Index()
         {
-			return View(HackathonsRepository.GetHackathons());
+			return View(_hackathonsRepository.GetHackathons());
         }
     }
 }
