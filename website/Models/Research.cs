@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 
 namespace website.Models
 {
@@ -38,6 +39,10 @@ namespace website.Models
 			/// List of the people I worked alongside (but not under).
 			/// </summary>
 			public List<string> partners { get; set; }
+			/// <summary>
+			/// Tags describing the research.
+			/// </summary>
+			public List<string> tags { get; set; }
 		}
 	}
 }

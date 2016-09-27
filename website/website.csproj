@@ -222,6 +222,7 @@
     <None Include="App_Data\README.txt" />
     <None Include="App_Data\hackathons.json" />
     <None Include="App_Data\skills.json" />
+    <None Include="App_Data\research.json" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
