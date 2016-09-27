@@ -17,33 +17,12 @@ namespace website.Controllers
     {
         public ActionResult Index()
         {
-			// Hard-code my skills into a Skills object.
-			Skills skills = new Skills {
-				proficient = new List<string> {
-					"C++",
-					"LaTeX",
-					"R"
-				},
-				familiar = new List<String> {
-					"Javascript",
-					"Java",
-					"Mathematica",
-					"C#",
-					"PHP",
-					"Python"
-				},
-				software = new List<string>{
-					"Git",
-					"Linux",
-					"CMake",
-					"ASP.NET MVC",
-					"Flask",
-					"NodeJS"
-				}
-			};
-
-			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath;
-			JsonHelpers.WriteJsonToFile(filePath + Path.DirectorySeparatorChar + "App_Data" + Path.DirectorySeparatorChar + "skills.json", skills);
+			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath 
+				+ Path.DirectorySeparatorChar 
+				+ "App_Data" 
+				+ Path.DirectorySeparatorChar 
+				+ "skills.json";
+			Skills skills = JsonHelpers.ReadJsonFromFile<Skills>(filePath);
 					
 			return View(skills);
         }

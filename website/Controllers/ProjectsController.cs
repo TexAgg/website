@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.IO;
 using Newtonsoft.Json;
 using website.Models;
+using website.Utilities;
 
 namespace website.Controllers
 {
@@ -21,10 +22,12 @@ namespace website.Controllers
 		public ActionResult Index()
         {
 			// http://stackoverflow.com/a/13297964/5415895
-			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath;
-			StreamReader r = new StreamReader(filePath + Path.DirectorySeparatorChar + "App_Data" + Path.DirectorySeparatorChar +  "projects.json");
-			string json = r.ReadToEnd();
-			Projects projects = JsonConvert.DeserializeObject<Projects>(json);
+			String filePath = System.Web.HttpContext.Current.Request.PhysicalApplicationPath 
+				+ Path.DirectorySeparatorChar 
+				+ "App_Data" 
+				+ Path.DirectorySeparatorChar 
+				+  "projects.json";
+			Projects projects = JsonHelpers.ReadJsonFromFile<Projects>(filePath);
 
 			return View(projects);
         }

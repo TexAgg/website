@@ -1,6 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace website.Utilities
 {
@@ -23,10 +24,19 @@ namespace website.Utilities
 			File.WriteAllText(filename, jsonString);
 		}
 
-		/* 
-		 * When I learn more about generics I will create a function that 
-		 * reads a JSON file and converts it to an instance of the object.
-		 */
+		/// <summary>
+		/// Reads json from a file, and returns an object of type T.
+		/// </summary>
+		/// <returns>The json from file.</returns>
+		/// <param name="filename">Filename.</param>
+		/// <typeparam name="T">The 1st type parameter.</typeparam>
+		public static T ReadJsonFromFile<T>(string filename)
+		{
+			StreamReader r = new StreamReader(filename);
+			string json = r.ReadToEnd();
+			T obj = JsonConvert.DeserializeObject<T>(json);
+			return obj;
+		}
 	}
 }
 
