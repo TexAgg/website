@@ -69,5 +69,13 @@ namespace website.Controllers
 		{
 			return Redirect ("~/Static/Stoplight/index.html");
 		}
+
+		/// <summary>
+		/// Redirect to Pepe Ball.
+		/// </summary>
+		public ActionResult PepeBall()
+		{
+			return Redirect("~/Static/PepeBall/index.html");
+		}
     }
 }

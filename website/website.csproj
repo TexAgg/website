@@ -166,6 +166,10 @@
     <Content Include="Static\Stoplight\build\main.js" />
     <Content Include="Views\Research\Index.cshtml" />
     <Content Include="Views\Hackathons\Index.cshtml" />
+    <Content Include="Static\PepeBall\index.html" />
+    <Content Include="Static\PepeBall\media\pepe.png" />
+    <Content Include="Static\PepeBall\scripts\script.js" />
+    <Content Include="Static\PepeBall\styles\style.css" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -228,6 +232,7 @@
     <None Include="App_Data\skills.json" />
     <None Include="App_Data\research.json" />
     <None Include="Data\README.txt" />
+    <None Include="Static\PepeBall\.git" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />

@@ -10,3 +10,6 @@
 [submodule "website/Static/Stoplight"]
 	path = website/Static/Stoplight
 	url = https://gaikema@bitbucket.org/gaikema/stoplight.git
+[submodule "website/Static/PepeBall"]
+	path = website/Static/PepeBall
+	url = https://gaikema@bitbucket.org/gaikema/pepeball.git
