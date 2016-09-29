@@ -66,14 +66,14 @@
 						Projects <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
-						<li role="presentation"><a href="~/Projects">Projects</a></li>
-						<li role="presentation"><a href="~/Research">Research</a></li>
-						<li role="presentation"><a href="~/Hackathons">Hackathons</a></li>
+						<li role="presentation"> @Html.ActionLink("Projects", "Index", "Projects")</li>
+						<li role="presentation"> @Html.ActionLink("Research", "Index", "Research")</li>
+						<li role="presentation"> @Html.ActionLink("Hackathons", "Index", "Hackathons")</li>
 					</ul>
 				</li><!--Dropdown menu-->
-				<li role="presentation"><a href="~/Skills">Skills</a></li>
-				<li role="presentation"><a href="~/Resume">Resume</a></li>
-				<li role="presentation"><a href="~/Contact">Contact Me</a></li>
+				<li role="presentation"> @Html.ActionLink("Skills", "Index", "Skills")</li>
+				<li role="presentation"> @Html.ActionLink("Resume", "Index", "Resume")</li>
+				<li role="presentation"> @Html.ActionLink("Contact Me", "Index", "Contact")</li>
 			</ul>
 		</div><!--navbar-collapse-->
 	</nav>
