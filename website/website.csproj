@@ -40,6 +40,7 @@
         <Command type="Custom" name="Download Resume" command="python download.py" workingdir="${SolutionDir}" />
         <Command type="AfterBuild" command="tsc" workingdir="${ProjectDir}/Static/Bubble" />
         <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/Stoplight" />
+        <Command type="AfterBuild" command="make" workingdir="${ProjectDir}/Content/Resume" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -138,7 +139,6 @@
     <Content Include="Views\Resume\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Scripts\main.js" />
-    <Content Include="Content\media\resume\main.png" />
     <Content Include="Content\media\bubbles.PNG" />
     <Content Include="Content\media\triangle.PNG" />
     <Content Include="Content\media\pancakes.PNG" />
@@ -202,7 +202,6 @@
   <ItemGroup>
     <None Include="App_Data\projects.json" />
     <None Include="Static\README.md" />
-    <None Include="Content\media\resume\main.pdf" />
     <None Include="Static\Bubble\.git" />
     <None Include="Static\Bubble\.gitignore" />
     <None Include="Static\Bubble\LICENSE" />
@@ -233,6 +232,12 @@
     <None Include="App_Data\research.json" />
     <None Include="Data\README.txt" />
     <None Include="Static\PepeBall\.git" />
+    <None Include="Content\Resume\.git" />
+    <None Include="Content\Resume\.gitignore" />
+    <None Include="Content\Resume\Makefile" />
+    <None Include="Content\Resume\README.md" />
+    <None Include="Content\Resume\main.tex" />
+    <None Include="Content\Resume\start.bat" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />

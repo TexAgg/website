@@ -20,10 +20,10 @@ git submodule update --recursive --remote
 ```
 
 ### Building
-To download my resume and static web projects into the correct directories,
-run `download.py`.
-This must be done,
-otherwise certain files will be missing and you will get 404 errors.
+All of the subprojects have custom build commands which are invoked when the site is built for debugging.
+Each subproject has a README which should detail specific requirements, 
+but most subprojects require Python 2 and NodeJS along with TypeScript, UglifyJS, and Browserify.
+My resume is more complex in that it requires GNU Make to be built, along with PdfLaTeX and Imagemagick.
 
 ### Running
 I developed this on Linux using Mono.

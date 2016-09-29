@@ -13,3 +13,6 @@
 [submodule "website/Static/PepeBall"]
 	path = website/Static/PepeBall
 	url = https://gaikema@bitbucket.org/gaikema/pepeball.git
+[submodule "website/Content/Resume"]
+	path = website/Content/Resume
+	url = https://github.com/TexAgg/Resume.git
