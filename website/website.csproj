@@ -37,7 +37,6 @@
     <DocumentationFile>bin\website.xml</DocumentationFile>
     <CustomCommands>
       <CustomCommands>
-        <Command type="Custom" name="Download Resume" command="python download.py" workingdir="${SolutionDir}" />
         <Command type="AfterBuild" command="tsc" workingdir="${ProjectDir}/Static/Bubble" />
         <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/Stoplight" />
         <Command type="AfterBuild" command="make" workingdir="${ProjectDir}/Content/Resume" />
