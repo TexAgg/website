@@ -43,6 +43,10 @@ namespace website.Models
 			/// Tags describing the research.
 			/// </summary>
 			public List<string> tags { get; set; }
+			/// <summary>
+			/// The chronological rank of the project.
+			/// </summary>
+			public int id { get; set; }
 		}
 	}
 }

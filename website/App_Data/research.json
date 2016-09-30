@@ -3,7 +3,7 @@
     {
       "title": "Expansion of Permutations as a Product of Transpositions",
       "date": "Summer, 2016",
-      "aboutHTML": "Discovered formula determining the total number of different transposition decompositions of a permutation cycle, and developed a program to compute the entries and eigensystem of the integer partition matrix",
+      "aboutHTML": "Discovered formula determining the total number of different transposition decompositions of a permutation cycle, and developed a program to compute the entries and eigensystem of the integer partition matrix.",
       "advisors": [
         "Micheal Anshelevich"
       ],
@@ -12,7 +12,19 @@
         "Madeline Hansalik",
         "Songyu He"
       ],
-      "tags": null
+      "tags": null,
+      "id": 0
+    },
+    {
+      "title": "Paramatrized Algorithms for Hard Problems",
+      "date": "Fall 2016 to Present",
+      "aboutHTML": null,
+      "advisors": [
+        "Jianer Chen"
+      ],
+      "partners": null,
+      "tags": null,
+      "id": 1
     }
   ]
 }

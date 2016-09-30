@@ -32,7 +32,14 @@ namespace website.Controllers
 
 		public ActionResult Index()
         {
-			return View(_researchRepository.GetResearch());
+			Research research = _researchRepository.GetResearch();
+			// Sort so that the most recent is first.
+			research.item.Sort(delegate(Research.Item lhs, Research.Item rhs) 
+			{
+					// http://stackoverflow.com/a/230620/5415895
+					return rhs.id.CompareTo(lhs.id);
+			});
+			return View(research);
         }
     }
 }

@@ -40,6 +40,7 @@
         <Command type="AfterBuild" command="tsc" workingdir="${ProjectDir}/Static/Bubble" />
         <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/Stoplight" />
         <Command type="AfterBuild" command="make" workingdir="${ProjectDir}/Content/Resume" />
+        <Command type="Custom" name="Update Modules" command="git submodule update --recursive --remote" workingdir="${SolutionDir}" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
