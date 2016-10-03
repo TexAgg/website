@@ -170,6 +170,9 @@
     <Content Include="Static\PepeBall\media\pepe.png" />
     <Content Include="Static\PepeBall\scripts\script.js" />
     <Content Include="Static\PepeBall\styles\style.css" />
+    <Content Include="Content\Resume\cv-1.png" />
+    <Content Include="Content\Resume\cv-2.png" />
+    <Content Include="Content\Resume\resume-1.png" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -236,8 +239,9 @@
     <None Include="Content\Resume\.gitignore" />
     <None Include="Content\Resume\Makefile" />
     <None Include="Content\Resume\README.md" />
-    <None Include="Content\Resume\main.tex" />
     <None Include="Content\Resume\start.bat" />
+    <None Include="Content\Resume\cv.pdf" />
+    <None Include="Content\Resume\resume.pdf" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
