@@ -5,6 +5,12 @@
       "year": 2016,
       "aboutHTML": "<a href='http://devpost.com/software/ilumi-therapy'>Ilumi-Therapy</a> is an android app that me and my team created for HackDFW. It is based on the concept of Light Therapy, an emerging field in medical science. It was created using the <a href='http://ilumi.co/'>Ilumi</a> Smart Bulb SDK, and it won us first place in Ilumi's contest for the most creative use of their SDK at the hackathon. The source code can be found <a href='https://github.com/ralphie9224/IlumiApp'>here.</a>",
       "tags": null
+    },
+    {
+      "name": "TamuHack",
+      "year": 2016,
+      "aboutHTML": "<a href='http://devpost.com/software/hackr-57zcwj'>Hackr</a> is a web app which helps hackers find teams at hackathons.",
+      "tags": null
     }
   ]
 }
