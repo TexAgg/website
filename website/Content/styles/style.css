@@ -1,36 +1,29 @@
-﻿body
-{
+﻿body {
 	background-color: #f2f2f2;
 }
 
-header
-{
+header {
 	padding-left: 15px;
 }
 
-.navbar
-{
+.navbar {
 	margin-bottom: 0;
 }
 
-.jumbotron
-{
+.jumbotron {
 	margin-bottom: 0;
 }
 
-#me
-{
+#me {
 	width: 128px;
 	padding-bottom: 10px;
 }
 
-#resume_img
-{
+#resume_img {
 	margin-top: 10px;
 }
 
-.proj
-{
+.proj {
 	position: relative;
 	border-color: gray;
 	border-width: 3px;
@@ -39,13 +32,11 @@ header
 	width: 13%;
 }
 
-.proj:hover
-{
+.proj:hover {
 	opacity: 1.0;
 }
 
-.sidebar 
-{
+.sidebar  {
 	/*width: 150px;*/
 	width: auto;
 	float: left; 
@@ -54,14 +45,12 @@ header
 	/*position: fixed;*/
 }
 
-#sidebar-menu
-{
+#sidebar-menu {
 	width: 13vw;
 }
 
 /* http://stackoverflow.com/a/26032279/5415895 */
-@media only screen and (max-width: 760px) 
-{
+@media only screen and (max-width: 760px) {
 	.hidden-phone
 	{
 		display: none;
@@ -69,13 +58,15 @@ header
 }
 
 /* http://stackoverflow.com/a/18801404/5415895 */
-#resume-iframe
-{
+#resume-iframe {
 	max-width: 100%;
 }
 
-footer
-{
+#resume-switch {
+	text-align: center;
+}
+
+footer {
     font-size: 0.75em;
     text-align: center;
     clear: both;
@@ -83,21 +74,18 @@ footer
     color: #ccc;
 }
 
-#fb
-{
+#fb {
 	width: 24px;
     height: 24px;
     margin: 0 5px;
 }
 
-#gh
-{
+#gh {
 	width: 24px;
     height: 24px;
 }
 
-.skills-list
-{
+.skills-list {
 	/*padding: 0px;	*/
 }
 
