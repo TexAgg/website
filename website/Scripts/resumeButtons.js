@@ -5,12 +5,21 @@
 $("[name='my-checkbox']").bootstrapSwitch();
 // http://www.bootstrap-switch.org/events.html
 $('input[name="my-checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {
-  console.log(state); // true | false
+
 	var img = document.getElementById("image");
+	var pdf_link = document.getElementById('pdf_link');
+
 	if (state) {
 		img.src = "~/Content/Resume/resume.png";
+		
+		// Changes the download link.
+		pdf_link.href = "~/Content/Resume/resume.pdf";
+		pdf_link.download = 'MattGaikemaResume';
 	}
 	else {
 		img.src = "~/Content/Resume/cv.png";
+
+		pdf_link.href = "~/Content/Resume/cv.pdf";
+		pdf_link.download = 'MattGaikemaCV';
 	}
 });

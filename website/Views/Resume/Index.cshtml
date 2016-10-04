@@ -7,12 +7,12 @@
 		@* http://stackoverflow.com/a/24867926/5415895 *@
 		<input type="checkbox" name="my-checkbox" data-on-text="Resume" data-off-text="cv" checked>
 	</div>
-	<p>
 	<!-- https://www.dropbox.com/s/p2rpwhtxd8yghaf/main.pdf?dl=0 -->
 	<img id="image" src="@Url.Content("~/Content/Resume/resume.png")" width="100%" height="100%">
 	<br>
-	To download a PDF copy of my resume, click 
-	<a href="@Url.Content("~/Content/Resume/resume.pdf")" download='MattGaikemaResume'>here.</a>
+	<p>
+	To download a PDF copy, click
+	<a id='pdf_link' href="@Url.Content("~/Content/Resume/resume.pdf")" download='MattGaikemaResume'>here.</a>
 	</p>
 </div>
 <script src="@Url.Content("~/Scripts/resumeButtons.js")"></script>
