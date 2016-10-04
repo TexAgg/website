@@ -1,4 +1,8 @@
-﻿$("[name='my-checkbox']").bootstrapSwitch();
+﻿/**
+ * A script for handling the bootstrap switch on the resume page.
+ */
+
+$("[name='my-checkbox']").bootstrapSwitch();
 // http://www.bootstrap-switch.org/events.html
 $('input[name="my-checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {
   console.log(state); // true | false
@@ -10,8 +14,3 @@ $('input[name="my-checkbox"]').on('switchChange.bootstrapSwitch', function(event
 		img.src = "~/Content/Resume/cv.png";
 	}
 });
-
-// http://stackoverflow.com/a/8784019/5415895
-function changeImage() {
-	var img = document.getElementById("image");
-}

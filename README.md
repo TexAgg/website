@@ -24,6 +24,7 @@ All of the subprojects have custom build commands which are invoked when the sit
 Each subproject has a README which should detail specific requirements, 
 but most subprojects require Python 2 and NodeJS along with TypeScript, UglifyJS, and Browserify.
 My resume is more complex in that it requires GNU Make to be built, along with PdfLaTeX and Imagemagick.
+It also used [poppler-utils](https://poppler.freedesktop.org/), which may not even exist for Windows.
 
 ### Running
 I developed this on Linux using Mono.
