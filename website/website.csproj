@@ -173,6 +173,8 @@
     <Content Include="Scripts\resumeButtons.js" />
     <Content Include="Content\Resume\cv.png" />
     <Content Include="Content\Resume\resume.png" />
+    <Content Include="Content\media\github.png" />
+    <Content Include="Content\media\linkedin.png" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

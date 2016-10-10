@@ -85,8 +85,10 @@ footer {
     height: 24px;
 }
 
-.skills-list {
-	/*padding: 0px;	*/
+.contact-icon {
+	padding-right: 3px;
+	width: 28px;
+	height: 28px;
 }
 
 /* http://www.colorzilla.com/gradient-editor/ */
