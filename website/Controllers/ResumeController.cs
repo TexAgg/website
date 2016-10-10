@@ -12,10 +12,11 @@ namespace website.Controllers
     /// </summary>
 	public class ResumeController : Controller
     {
-        public ActionResult Index()
+        /// <summary>
+        /// Default route for the resume controller.
+        /// </summary>
+		public ActionResult Index()
         {
-			ViewBag.Section = "resume";
-
 			return View();
         }
     }

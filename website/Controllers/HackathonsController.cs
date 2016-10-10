@@ -30,6 +30,9 @@ namespace website.Controllers
 			_hackathonsRepository = new HackathonsRepository();
 		}
 
+		/// <summary>
+		/// Default route of the hackathons controller.
+		/// </summary>
 		public ActionResult Index()
         {
 			return View(_hackathonsRepository.GetHackathons());

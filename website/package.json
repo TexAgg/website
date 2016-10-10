@@ -12,9 +12,7 @@
     "website"
   ],
   "author": "Matt Gaikema",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/TexAgg/website/issues"
-  },
-  "homepage": "https://github.com/TexAgg/website#readme"
+  }
 }

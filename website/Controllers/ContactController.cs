@@ -13,7 +13,7 @@ namespace website.Controllers
 	public class ContactController : Controller
     {
        /// <summary>
-       /// Main route of the contact controller.
+       /// Default route of the contact controller.
        /// </summary>
 		public ActionResult Index()
         {

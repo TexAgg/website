@@ -30,6 +30,9 @@ namespace website.Controllers
 			_researchRepository = new ResearchRepository();
 		}
 
+		/// <summary>
+		/// Default route for the research controller.
+		/// </summary>
 		public ActionResult Index()
         {
 			Research research = _researchRepository.GetResearch();

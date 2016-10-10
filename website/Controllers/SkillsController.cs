@@ -29,6 +29,9 @@ namespace website.Controllers
 			_skillsRepository = new SkillsRepository();
 		}
 
+		/// <summary>
+		/// Default route for the skills controller.
+		/// </summary>
 		public ActionResult Index()
         {					
 			return View(_skillsRepository.GetSkills());

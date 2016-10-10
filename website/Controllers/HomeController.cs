@@ -14,7 +14,7 @@ namespace website.Controllers
 	public class HomeController : Controller
 	{
 		/// <summary>
-		/// Default action.
+		/// Default route.
 		/// </summary>
 		public ActionResult Index()
 		{
