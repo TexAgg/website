@@ -77,5 +77,13 @@ namespace website.Controllers
 		{
 			return Redirect("~/Static/PepeBall/index.html");
 		}
+
+		/// <summary>
+		/// Redirect to timer.
+		/// </summary>
+		public ActionResult Timer()
+		{
+			return Redirect("~/Static/timer/index.html");
+		}
     }
 }

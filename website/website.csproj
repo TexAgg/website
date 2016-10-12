@@ -41,6 +41,7 @@
         <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/Stoplight" />
         <Command type="AfterBuild" command="make" workingdir="${ProjectDir}/Content/Resume" />
         <Command type="Custom" name="Update Modules" command="git submodule update --recursive --remote" workingdir="${SolutionDir}" />
+        <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/timer" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -175,6 +176,7 @@
     <Content Include="Content\Resume\resume.png" />
     <Content Include="Content\media\github.png" />
     <Content Include="Content\media\linkedin.png" />
+    <Content Include="Static\timer\index.html" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -243,6 +245,12 @@
     <None Include="Content\Resume\README.md" />
     <None Include="Content\Resume\cv.pdf" />
     <None Include="Content\Resume\resume.pdf" />
+    <None Include="Static\timer\.gitignore" />
+    <None Include="Static\timer\README.txt" />
+    <None Include="Static\timer\build.py" />
+    <None Include="Static\timer\tsconfig.json" />
+    <None Include="Static\timer\scripts\Timer.ts" />
+    <None Include="Static\timer\scripts\main.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />

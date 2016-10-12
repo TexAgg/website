@@ -16,3 +16,6 @@
 [submodule "website/Content/Resume"]
 	path = website/Content/Resume
 	url = https://github.com/TexAgg/Resume.git
+[submodule "website/Static/timer"]
+	path = website/Static/timer
+	url = https://gaikema@bitbucket.org/gaikema/timer.git
