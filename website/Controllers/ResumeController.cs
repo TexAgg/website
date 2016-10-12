@@ -6,18 +6,18 @@ using System.Web.Mvc;
 
 namespace website.Controllers
 {
-    /// <summary>
-    /// Resume controller.
+	/// <summary>
+	/// Resume controller.
 	/// Display my resume.
-    /// </summary>
+	/// </summary>
 	public class ResumeController : Controller
-    {
-        /// <summary>
-        /// Default route for the resume controller.
-        /// </summary>
+	{
+		/// <summary>
+		/// Default route for the resume controller.
+		/// </summary>
 		public ActionResult Index()
-        {
+		{
 			return View();
-        }
-    }
+		}
+	}
 }

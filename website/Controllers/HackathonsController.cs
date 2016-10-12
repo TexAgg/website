@@ -11,12 +11,12 @@ using website.Data;
 
 namespace website.Controllers
 {
-    /// <summary>
-    /// Hackathons controller.
+	/// <summary>
+	/// Hackathons controller.
 	/// Display information about hackathons I have participated in.
-    /// </summary>
+	/// </summary>
 	public class HackathonsController : Controller
-    {
+	{
 		/// <summary>
 		/// The hackathons repository.
 		/// </summary>
@@ -34,8 +34,8 @@ namespace website.Controllers
 		/// Default route of the hackathons controller.
 		/// </summary>
 		public ActionResult Index()
-        {
+		{
 			return View(_hackathonsRepository.GetHackathons());
-        }
-    }
+		}
+	}
 }

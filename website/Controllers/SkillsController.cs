@@ -10,12 +10,12 @@ using website.Data;
 
 namespace website.Controllers
 {
-    /// <summary>
-    /// Skills controller.
+	/// <summary>
+	/// Skills controller.
 	/// Display my skills.
-    /// </summary>
+	/// </summary>
 	public class SkillsController : Controller
-    {
+	{
 		/// <summary>
 		/// The skills repository.
 		/// </summary>
@@ -33,8 +33,8 @@ namespace website.Controllers
 		/// Default route for the skills controller.
 		/// </summary>
 		public ActionResult Index()
-        {					
+		{					
 			return View(_skillsRepository.GetSkills());
-        }
-    }
+		}
+	}
 }

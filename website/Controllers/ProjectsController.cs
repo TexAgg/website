@@ -12,9 +12,9 @@ using website.Data;
 namespace website.Controllers
 {
 	/// <summary>
-    /// Projects controller.
+	/// Projects controller.
 	/// Displays all my projects and also handles routes to some small javascript projects.
-    /// </summary>
+	/// </summary>
 	public class ProjectsController : Controller
     {
 		/// <summary>

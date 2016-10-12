@@ -11,12 +11,12 @@ using website.Data;
 
 namespace website.Controllers
 {
-    /// <summary>
-    /// Research controller.
+	/// <summary>
+	/// Research controller.
 	/// Display information about research I have done.
-    /// </summary>
+	/// </summary>
 	public class ResearchController : Controller
-    {
+	{
 		/// <summary>
 		/// The research repository.
 		/// </summary>
@@ -34,7 +34,7 @@ namespace website.Controllers
 		/// Default route for the research controller.
 		/// </summary>
 		public ActionResult Index()
-        {
+		{
 			Research research = _researchRepository.GetResearch();
 			// Sort so that the most recent is first.
 			research.item.Sort(delegate(Research.Item lhs, Research.Item rhs) 
@@ -43,6 +43,6 @@ namespace website.Controllers
 					return rhs.id.CompareTo(lhs.id);
 			});
 			return View(research);
-        }
-    }
+		}
+	}
 }
