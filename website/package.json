@@ -14,5 +14,6 @@
   "author": "Matt Gaikema",
   "bugs": {
     "url": "https://github.com/TexAgg/website/issues"
-  }
+  },
+  "license": "GPL"
 }
