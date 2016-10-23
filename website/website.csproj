@@ -255,6 +255,7 @@
     <None Include="Static\timer\scripts\main.ts" />
     <None Include="Content\graph\README.txt" />
     <None Include="Content\graph\graph.wl" />
+    <None Include="Content\graph\graph.gml" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
