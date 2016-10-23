@@ -8,12 +8,18 @@ header {
 	padding-left: 15px;
 }
 
+.jumbo-box {
+	/* http://stackoverflow.com/a/14310180/5415895 */
+	background-color: rgba(220,220,220, 0.8);
+}
+
 .navbar {
 	margin-bottom: 0;
 }
 
 .jumbotron {
 	margin-bottom: 0;
+  	background: url("../graph/graph.png");
 }
 
 footer {
