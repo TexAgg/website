@@ -1,0 +1,1 @@
+Create a random graph using Mathematica and save it as an image.
