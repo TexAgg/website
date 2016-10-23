@@ -3,6 +3,7 @@
 
 *.zip
 website/Content/media/resume
+website/Scripts/*.min.js
 
 # Created by https://www.gitignore.io/api/monodevelop,csharp
 

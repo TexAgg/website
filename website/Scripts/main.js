@@ -1,3 +1,5 @@
+var clippyjs = require('../node_modules/clippy.js/build/clippy.min.js');
+
 // Load Clippy.
 clippy.load('Clippy', function(agent) {
 	agent.show();
