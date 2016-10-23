@@ -1,6 +1,7 @@
 (* ::Package:: *)
 
-(* Creates a random graph to make an image. *)
+(* Creates a random graph to make an image for the jumbotron,
+and saves the graph as a DOT file. *)
 
 
 ClearAll["Global`*"]
@@ -15,8 +16,8 @@ g = RandomGraph[
 	VertexShapeFunction->"Circle",
 	VertexSize->Large
 ];
-(* Export it as a graphlet. *)
-Export["graph.gml", g]
+(* Export it as a DOT file. *)
+Export["graph.gv", g, "DOT"]
 (* Use Show to convert the graph to a graphic. 
 The purpose of Show is to display output, 
 so Mathematica doesn't like a Show statement to be followed by a semicolon. *)
