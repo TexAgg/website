@@ -6,7 +6,9 @@
     "clippy.js": "^1.0.0"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^4.0.0",
+    "css-loader": "^0.25.0",
+    "script-loader": "^0.7.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.2"
   },
   "repository": {
@@ -20,5 +22,5 @@
   "bugs": {
     "url": "https://github.com/TexAgg/website/issues"
   },
-  "license": "GPL"
+  "license": "GPL-3.0"
 }
