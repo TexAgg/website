@@ -1,14 +1,11 @@
-﻿<link rel="stylesheet" type="text/css" href="http://www.bootstrap-switch.org/dist/css/bootstrap3/bootstrap-switch.css">
-@*<script type='text/javascript' src="http://www.bootstrap-switch.org/dist/js/bootstrap-switch.js"></script>*@
-
-<div id='resume' class="container panel panel-default">
+﻿<div id='resume' class="container panel panel-default">
 	<div class="panel-heading">
 		<h2>@ViewContext.RouteData.Values["Controller"]</h2>
 	</div>
 	@* http://jsfiddle.net/EVmwe/4/ *@
 	<div id="resume-switch">
 		@* http://stackoverflow.com/a/24867926/5415895 *@
-		<input type="checkbox" name="my-checkbox" data-on-text="Resume" data-off-text="cv" checked>
+		<input type="checkbox" name="my-checkbox" data-on-text="Resume" data-off-text="CV" checked>
 	</div>
 	<!-- https://www.dropbox.com/s/p2rpwhtxd8yghaf/main.pdf?dl=0 -->
 	<img id="image" src="@Url.Content("~/Content/Resume/resume.png")" width="100%" height="100%">

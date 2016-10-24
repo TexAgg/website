@@ -2,6 +2,8 @@
  * A script for handling the bootstrap switch on the resume page.
  */
 
+// Import css.
+require("../node_modules/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css");
 require('bootstrap-switch');
 
 $("[name='my-checkbox']").bootstrapSwitch();
