@@ -28,8 +28,10 @@
 
 	<!-- ClipppyJS
 	https://jsfiddle.net/djprmf/qCuH6/ -->
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/clippy.js/1.0/clippy.min.css">
-	@*<script src="//cdn.jsdelivr.net/clippy.js/1.0/clippy.min.js"></script>*@
+	@*<link rel="stylesheet" href="//cdn.jsdelivr.net/clippy.js/1.0/clippy.min.css">
+	<script src="//cdn.jsdelivr.net/clippy.js/1.0/clippy.min.js"></script>*@
+	<link rel="stylesheet" href="@Url.Content("~/dist/clippy.js/clippy.css")">
+	<script src="@Url.Content("~/dist/clippy.js/clippy.min.js")"></script>
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -101,7 +103,7 @@
 		
 	</footer>
 
-	<script src="@Url.Content("~/Scripts/bundle.min.js")"></script>
+	<script src="@Url.Content("~/dist/bundle.min.js")"></script>
 
 </body>
 </html>
