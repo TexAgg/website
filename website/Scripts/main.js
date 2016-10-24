@@ -1,6 +1,3 @@
-var clippyjs = require('../node_modules/clippy.js/build/clippy.min.js');
-
-//console.log(clippyjs);
 clippy.load('Clippy', function(agent) {
 	agent.show();
 	agent.speak("Hello! Welcome to the website of Matt Gaikema!");
