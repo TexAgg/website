@@ -4,6 +4,9 @@
 *.zip
 website/Content/media/resume
 
+## Bundled scripts
+website/Scripts/*.min.js
+
 # Created by https://www.gitignore.io/api/monodevelop,csharp
 
 ### MonoDevelop ###
