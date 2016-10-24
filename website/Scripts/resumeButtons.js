@@ -2,6 +2,8 @@
  * A script for handling the bootstrap switch on the resume page.
  */
 
+require('bootstrap-switch');
+
 $("[name='my-checkbox']").bootstrapSwitch();
 // http://www.bootstrap-switch.org/events.html
 $('input[name="my-checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {

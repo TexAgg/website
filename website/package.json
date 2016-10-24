@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "My personal website",
   "dependencies": {
+    "bootstrap-switch": "^3.3.2",
     "clippy.js": "^1.0.0"
   },
   "devDependencies": {
