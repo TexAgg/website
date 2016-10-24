@@ -3,6 +3,10 @@
 
 *.zip
 website/Content/media/resume
+# Webpacked files
+website/Scripts/*.min.js
+# Third-party static bundles
+website/dist
 
 ## Bundled scripts
 website/Scripts/*.min.js

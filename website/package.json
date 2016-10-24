@@ -2,8 +2,13 @@
   "name": "website",
   "version": "1.0.0",
   "description": "My personal website",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "clippy.js": "^1.0.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.0.0",
+    "webpack": "^1.13.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TexAgg/website.git"
