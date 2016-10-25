@@ -5,6 +5,7 @@
       "display": "<iframe src=\"https://webchat.botframework.com/embed/gaikbot?s=_kROGLOlwLY.cwA.KSI.dyBYCR7BCGOtIE5qj0kSN3V1BWreyDC1oxhn_vAtEG0\" style=\"height: 502px; max-height: 502px;\"></iframe>",
       "id": "gaikbot",
       "name": "GaikBot",
+      "link": "https://bitbucket.org/gaikema/gaikbot/wiki/Home",
       "tags": [
         "web",
         "artificial intelligence"
@@ -14,6 +15,7 @@
       "about": "I am the Official webmaster for Math Club, the umbrella organization for all undergraduate societies within the Mathematics Departament at Texas A&M. I was unanimously elected, and I created the first website for the club from scratch, which is currently hosted <a href=\"https://peaceful-atoll-84937.herokuapp.com/\">here</a> but will soon be hosted on the Math Department servers.",
       "id": "pme",
       "name": "Math Club Website",
+      "link": "https://peaceful-atoll-84937.herokuapp.com",
       "tags": [
         "web"
       ]
@@ -22,6 +24,7 @@
       "about": "PolyRoot is a Mathematica library which impliments various <a href=\"https://en.wikipedia.org/wiki/Root-finding_algorithm\">root-finding algorithms</a>. The source code can be found <a href=\"https://github.com/TexAgg/PolyRoot\">here</a>.",
       "id": "polyroot",
       "name": "PolyRoot",
+      "link": "https://github.com/TexAgg/PolyRoot",
       "tags": [
         "math"
       ]
@@ -30,12 +33,14 @@
       "about": "A basic Markov text generator written in C++. View the source code <a href=\"https://github.com/TexAgg/MarkovTextGenerator\">here</a>. \nI also created an implementation in PHP <a href=\"https://bitbucket.org/gaikema/markovbot/overview\">here</a>.",
       "id": "markov",
       "name": "Markov Text Generator",
+      "link": "https://github.com/TexAgg/MarkovTextGenerator",
       "tags": []
     },
     {
       "about": "I helped design and implement the website for <a href='http://aggiecodingclub.com/'>Aggie Coding Club.</a> I worked with a group of about 10 other students.",
       "id": "acc",
       "name": "Aggie Coding Club Website",
+      "link": "http://aggiecodingclub.com",
       "tags": [
         "web"
       ]
@@ -44,6 +49,7 @@
       "about": "<a href='http://devpost.com/software/ilumi-therapy'>Ilumi-Therapy</a> is an android app that me and my team created for HackDFW. It is based on the concept of Light Therapy, an emerging field in medical science. It was created using the <a href='http://ilumi.co/'>Ilumi</a> Smart Bulb SDK, and it won us first place in Ilumi's contest for the most creative use of their SDK at the hackathon. The source code can be found <a href='https://github.com/ralphie9224/IlumiApp'>here.</a>",
       "id": "ilumiapp",
       "name": "IlumiTherapy",
+      "link": "http://devpost.com/software/ilumi-therapy",
       "tags": [
         "hackathon"
       ]
@@ -53,6 +59,7 @@
       "display": "<a href='~/Projects/FlapGod2'><img id='pancakes' class='proj' src='Content/media/pancakes.PNG'></img></a>",
       "id": "flap",
       "name": "Flap God 2",
+      "link": "~/Projects/FlapGod2",
       "tags": [
         "javascript",
         "canvas"
@@ -63,6 +70,7 @@
       "display": "<a href='~/Projects/TriangleCalculator' target='_blank'><img id='triangle_img' class='proj' src='Content/media/triangle.PNG'></img></a>",
       "id": "triangle",
       "name": "Triangle Calculator",
+      "link": "~/Projects/TriangleCalculator",
       "tags": [
         "javascript",
         "canvas"
@@ -73,6 +81,7 @@
       "display": "<a href='~/Projects/Bubble'><img id='bubble_img' class='proj' src='Content/media/bubbles.PNG'></img></a>",
       "id": "bubble",
       "name": "Bubble",
+      "link": "~/Projects/Bubble",
       "tags": [
         "javascript",
         "canvas"
@@ -83,6 +92,7 @@
       "display": "<a href='https://www.facebook.com/profile.php?id=100010461758967&fref=ts'><img class='proj' src='Content/media/fb_icon_325x325.png'></img></a></a>",
       "id": "dank",
       "name": "Dank Sinatra",
+      "link": "https://bitbucket.org/gaikema/danksinatra/wiki/Home",
       "tags": [
         "web",
         "artificial intelligence"
