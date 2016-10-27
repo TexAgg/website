@@ -44,7 +44,15 @@ namespace website.Models
 			/// The tags describing each project.
 			/// </summary>
 			public List<string> tags { get; set; }
+			/// <summary>
+			/// Link to the project webpage.
+			/// </summary>
+			/// <value>The link.</value>
 			public string link { get; set; }
+			/// <summary>
+			/// Link to image url.
+			/// </summary>
+			/// <value>The image.</value>
 			public string img { get; set; }
 		}
 	}
