@@ -21,6 +21,12 @@
 		}
 		@foreach(var i in @Model.item)
 		{
+			@* Add a placeholder image. *@
+			string img = i.img;
+			if(@i.img == null)
+			{
+				img = "Content/Graph/placeholder.png";
+			}
 			if(@count % 3 == 0)
 			{
 				@:<div class="row">
@@ -29,7 +35,7 @@
 			<text>
 				<div class="col-md-4">
 					<a href=@i.link>
-						<img class="img-responsive proj" src=@i.img>
+						<img class="img-responsive proj" src=@img>
 					</a>
 					<h3>
 						@i.name

@@ -180,6 +180,7 @@
     <Content Include="Content\media\linkedin.png" />
     <Content Include="Static\timer\index.html" />
     <Content Include="Content\Graph\graph.png" />
+    <Content Include="Content\Graph\placeholder.png" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -254,9 +255,9 @@
     <None Include="Static\timer\tsconfig.json" />
     <None Include="Static\timer\scripts\Timer.ts" />
     <None Include="Static\timer\scripts\main.ts" />
-    <None Include="Content\Graph\README.txt" />
     <None Include="Content\Graph\graph.wl" />
-    <None Include="Content\Graph\graph.gml" />
+    <None Include="Content\Graph\graph.gv" />
+    <None Include="Content\Graph\README.md" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
