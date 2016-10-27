@@ -15,25 +15,37 @@
 		<h2>@ViewContext.RouteData.Values["Controller"]</h2>
 	</div>
 	<div class="panel-group">
+	@* http://stackoverflow.com/a/21414081/5415895 *@
+		@{
+			int count = 0;
+		}
 		@foreach(var i in @Model.item)
 		{
-			var @id = @i.id;
+			if(@count % 3 == 0)
+			{
+				@:<div class="row">
+			}
 
-			<div id="@id" class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">
+			<text>
+				<div class="col-md-4">
+					<a href=@i.link>
+						<img class="img-responsive proj" src=@i.img>
+					</a>
+					<h3>
 						@i.name
-					</h4>
-				</div> @* !panel-heading *@
+					</h3>
+					<p>
+						@Html.Raw(@i.about)
+					</p>
+				</div>
+			</text>
 
-				<div class="panel-body">
-					@* http://stackoverflow.com/a/4282073/5415895 *@
-					@Html.Raw(@i.about)
-					<br>
-					@Html.Raw(@i.display)
-				</div> @* !panel-body *@
+			if(@count % 3 == 2)
+			{
+				@:</div>
+			}
 
-			</div> @* !panel-default *@
+			count++;
 		}
 	</div>
 </div>

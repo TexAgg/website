@@ -60,6 +60,7 @@
       "id": "flap",
       "name": "Flap God 2",
       "link": "~/Projects/FlapGod2",
+      "img": "Content/media/pancakes.PNG",
       "tags": [
         "javascript",
         "canvas"
@@ -71,6 +72,7 @@
       "id": "triangle",
       "name": "Triangle Calculator",
       "link": "~/Projects/TriangleCalculator",
+      "img": "Content/media/triangle.PNG",
       "tags": [
         "javascript",
         "canvas"
@@ -82,6 +84,7 @@
       "id": "bubble",
       "name": "Bubble",
       "link": "~/Projects/Bubble",
+      "img": "Content/media/bubbles.PNG",
       "tags": [
         "javascript",
         "canvas"
@@ -93,6 +96,7 @@
       "id": "dank",
       "name": "Dank Sinatra",
       "link": "https://bitbucket.org/gaikema/danksinatra/wiki/Home",
+      "img": "Content/media/fb_icon_325x325.png",
       "tags": [
         "web",
         "artificial intelligence"

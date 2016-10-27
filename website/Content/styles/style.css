@@ -47,7 +47,9 @@ footer {
 	border-width: 3px;
 	border-style: outset;
 	opacity: 0.4;
-	width: 13%;
+	/*width: 13%;*/
+	width: 700px;
+	height: 400px;
 }
 
 .proj:hover {
