@@ -125,6 +125,7 @@
     <Compile Include="Data\ResearchRepository.cs" />
     <Compile Include="Data\SkillsRepository.cs" />
     <Compile Include="Utilities\HTMLUtilities.cs" />
+    <Compile Include="Controllers\GraphController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -181,6 +182,7 @@
     <Content Include="Static\timer\index.html" />
     <Content Include="Content\Graph\graph.png" />
     <Content Include="Content\Graph\placeholder.png" />
+    <Content Include="Views\Graph\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -267,5 +269,6 @@
     <Folder Include="Views\Hackathons\" />
     <Folder Include="Utilities\" />
     <Folder Include="Data\" />
+    <Folder Include="Views\Graph\" />
   </ItemGroup>
 </Project>
