@@ -6,18 +6,18 @@ using System.Web.Mvc;
 
 namespace website.Controllers
 {
-    /// <summary>
-    /// Graph controller.
-    /// </summary>
+	/// <summary>
+	/// Graph controller.
+	/// </summary>
 	public class GraphController : Controller
-    {
-        /// <summary>
-        /// Display information about the graph.
-        /// </summary>
+	{
+		/// <summary>
+		/// Display information about the graph.
+		/// </summary>
 		public ActionResult Index()
-        {
-            return View();
-        }
+		{
+			return View();
+		}
 
 		/// <summary>
 		/// The dot file.
@@ -34,5 +34,5 @@ namespace website.Controllers
 		{
 			return File("Content/Graph/graph.wl", "text/plain");
 		}
-    }
+	}
 }
