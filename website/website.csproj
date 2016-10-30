@@ -183,6 +183,7 @@
     <Content Include="Content\Graph\graph.png" />
     <Content Include="Content\Graph\placeholder.png" />
     <Content Include="Views\Graph\Index.cshtml" />
+    <Content Include="Content\media\devpost.svg" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -264,7 +265,6 @@
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
-    <Folder Include="Content\media\contact\" />
     <Folder Include="Views\Research\" />
     <Folder Include="Views\Hackathons\" />
     <Folder Include="Utilities\" />
