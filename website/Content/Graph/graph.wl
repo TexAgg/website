@@ -8,7 +8,7 @@ ClearAll["Global`*"]
 SetDirectory[NotebookDirectory[]];
 
 
-(* Create the graph. *)
+(* Create a random graph with 200 vertices and 400 edges. *)
 g = RandomGraph[
 	{200,400}, 
 	EdgeStyle->Gray, 

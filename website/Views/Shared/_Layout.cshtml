@@ -1,6 +1,4 @@
-﻿@using Utilities
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>@ViewContext.RouteData.Values["Controller"]</title>
@@ -51,34 +49,7 @@
 	@*
 		Navbar.
 	*@
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div><!--navbar-header-->
-		<div id="navbar" class="navbar-collapse collapse">
-			<ul class="nav nav-tabs">
-				<li role="presentation" class="@Url.MakeActiveClass("Home")"> @Html.ActionLink("Home", "Index", "Home")</li>
-				<li role="presentation" class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-						Projects <span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<li role="presentation"> @Html.ActionLink("Projects", "Index", "Projects")</li>
-						<li role="presentation"> @Html.ActionLink("Research", "Index", "Research")</li>
-						<li role="presentation"> @Html.ActionLink("Hackathons", "Index", "Hackathons")</li>
-					</ul>
-				</li><!--Dropdown menu-->
-				<li class="@Url.MakeActiveClass("Skills")" role="presentation"> @Html.ActionLink("Skills", "Index", "Skills")</li>
-				<li class="@Url.MakeActiveClass("Resume")" role="presentation"> @Html.ActionLink("Resume", "Index", "Resume")</li>
-				<li class="@Url.MakeActiveClass("Contact")" role="presentation"> @Html.ActionLink("Contact Me", "Index", "Contact")</li>
-			</ul>
-		</div><!--navbar-collapse-->
-	</nav>
+	@Html.Partial("_Navbar")
 
 	@RenderBody()
 

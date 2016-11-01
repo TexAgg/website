@@ -1,0 +1,14 @@
+﻿<div id="projects" class="container panel panel-default">
+	<div class="panel-heading">
+		<h2>@ViewContext.RouteData.Values["Controller"]</h2>
+	</div>
+	<p>
+	The cover photo was made using Mathematica,
+	by generating a random graph with 200 vertices and 400 edges, and then cropping the image.
+	</p>
+	<ul>
+		<li>@Html.ActionLink("Mathematica source code", "Source", "Graph")</li>
+		<li>@Html.ActionLink("DOT file", "Graph", "Graph")</li>
+	</ul>
+
+</div>
