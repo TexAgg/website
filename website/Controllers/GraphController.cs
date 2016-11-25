@@ -32,7 +32,7 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult Source()
 		{
-			return File("Content/Graph/graph.wl", "text/plain");
+			return File("Content/Graph/graph.wl", "application/vnd.wolfram.mathematica.package");
 		}
 	}
 }

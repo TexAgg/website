@@ -56,6 +56,10 @@ footer {
 	opacity: 1.0;
 }
 
+.project-wrapper {
+	border-style: hidden;
+}
+
 .sidebar  {
 	/*width: 150px;*/
 	width: auto;
