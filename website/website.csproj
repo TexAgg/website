@@ -181,6 +181,8 @@
     <Content Include="Content\Graph\placeholder.png" />
     <Content Include="Views\Graph\Index.cshtml" />
     <Content Include="Content\media\devpost.svg" />
+    <Content Include="Static\Snake\index.html" />
+    <Content Include="Static\Snake\main.css" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -212,7 +214,6 @@
   </ProjectExtensions>
   <ItemGroup>
     <None Include="App_Data\projects.json" />
-    <None Include="Static\README.md" />
     <None Include="Static\Bubble\.git" />
     <None Include="Static\Bubble\.gitignore" />
     <None Include="Static\Bubble\LICENSE" />
@@ -258,6 +259,15 @@
     <None Include="Content\Graph\graph.wl" />
     <None Include="Content\Graph\graph.gv" />
     <None Include="Content\Graph\README.md" />
+    <None Include="Static\Snake\.gitattributes" />
+    <None Include="Static\Snake\Food.ts" />
+    <None Include="Static\Snake\Game.ts" />
+    <None Include="Static\Snake\Main.ts" />
+    <None Include="Static\Snake\README.txt" />
+    <None Include="Static\Snake\Snake.ts" />
+    <None Include="Static\Snake\build.py" />
+    <None Include="Static\Snake\tsconfig.json" />
+    <None Include="Static\README.txt" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />

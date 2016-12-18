@@ -85,5 +85,13 @@ namespace website.Controllers
 		{
 			return Redirect("~/Static/timer/index.html");
 		}
+
+		/// <summary>
+		/// Redirect to Snake.
+		/// </summary>
+		public ActionResult Snake()
+		{
+			return Redirect("~/Static/Snake/index.html");
+		}
     }
 }
