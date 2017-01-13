@@ -54,6 +54,16 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <Prefer32Bit>false</Prefer32Bit>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command="tsc" workingdir="${ProjectDir}/Static/Bubble" />
+        <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/Stoplight" />
+        <Command type="AfterBuild" command="make" workingdir="${ProjectDir}/Content/Resume" />
+        <Command type="Custom" name="Update Modules" command="git submodule update --recursive --remote" workingdir="${SolutionDir}" />
+        <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/timer" />
+        <Command type="AfterBuild" command="webpack" workingdir="${ProjectDir}" />
+      </CustomCommands>
+    </CustomCommands>    
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
