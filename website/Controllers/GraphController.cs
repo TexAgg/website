@@ -24,7 +24,8 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult Graph()
 		{
-			return File("Content/Graph/graph.gv", "text/plain");
+			string path = Server.MapPath("~/Content/Graph/graph.gv");
+			return File(path, "text/plain");
 		}
 
 		/// <summary>
@@ -32,7 +33,8 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult Source()
 		{
-			return File("Content/Graph/graph.wl", "application/vnd.wolfram.mathematica.package");
+			string path = Server.MapPath("~/Content/Graph/graph.wl");
+			return File(path, "text/plain");
 		}
 	}
 }
