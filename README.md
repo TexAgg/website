@@ -1,7 +1,6 @@
 ﻿# mattgaikema.com
 
-Rewriting my website (again) using ASP.NET.
-Currently hosted [here](http://mattgaikema.azurewebsites.net/).
+Source code for [my website](http://mattgaikema.com/).
 
 ---
 
