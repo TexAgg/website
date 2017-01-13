@@ -43,7 +43,7 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult Bubble()
 		{
-			return Redirect("~/Static/Bubble/index.html");
+			return Redirect("/Static/Bubble/index.html");
 		}
 
 		/// <summary>
@@ -51,7 +51,7 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult TriangleCalculator()
 		{
-			return Redirect("~/Static/triangle_calculator/triangle_calculator/index.html");
+			return Redirect("/Static/triangle_calculator/triangle_calculator/index.html");
 		}
 
 		/// <summary>
@@ -59,7 +59,7 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult FlapGod2()
 		{
-			return Redirect("~/Static/flap_god2/flap_god2/index.html");
+			return Redirect("/Static/flap_god2/flap_god2/index.html");
 		}
 
 		/// <summary>
@@ -67,7 +67,7 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult Stoplight()
 		{
-			return Redirect ("~/Static/Stoplight/index.html");
+			return Redirect ("/Static/Stoplight/index.html");
 		}
 
 		/// <summary>
@@ -75,7 +75,7 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult PepeBall()
 		{
-			return Redirect("~/Static/PepeBall/index.html");
+			return Redirect("/Static/PepeBall/index.html");
 		}
 
 		/// <summary>
@@ -83,7 +83,7 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult Timer()
 		{
-			return Redirect("~/Static/timer/index.html");
+			return Redirect("/Static/timer/index.html");
 		}
 
 		/// <summary>
@@ -91,7 +91,7 @@ namespace website.Controllers
 		/// </summary>
 		public ActionResult Snake()
 		{
-			return Redirect("~/Static/Snake/index.html");
+			return Redirect("/Static/Snake/index.html");
 		}
     }
 }

@@ -59,7 +59,7 @@
       "display": "<a href='~/Projects/FlapGod2'><img id='pancakes' class='proj' src='Content/media/pancakes.PNG'></img></a>",
       "id": "flap",
       "name": "Flap God 2",
-      "link": "~/Projects/FlapGod2",
+      "link": "/Projects/FlapGod2",
       "img": "Content/media/pancakes.PNG",
       "tags": [
         "javascript",
@@ -71,7 +71,7 @@
       "display": "<a href='~/Projects/TriangleCalculator' target='_blank'><img id='triangle_img' class='proj' src='Content/media/triangle.PNG'></img></a>",
       "id": "triangle",
       "name": "Triangle Calculator",
-      "link": "~/Projects/TriangleCalculator",
+      "link": "/Projects/TriangleCalculator",
       "img": "Content/media/triangle.PNG",
       "tags": [
         "javascript",
@@ -83,7 +83,7 @@
       "display": "<a href='~/Projects/Bubble'><img id='bubble_img' class='proj' src='Content/media/bubbles.PNG'></img></a>",
       "id": "bubble",
       "name": "Bubble",
-      "link": "~/Projects/Bubble",
+      "link": "/Projects/Bubble",
       "img": "Content/media/bubbles.PNG",
       "tags": [
         "javascript",
