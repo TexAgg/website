@@ -63,7 +63,7 @@
         <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/timer" />
         <Command type="AfterBuild" command="webpack" workingdir="${ProjectDir}" />
       </CustomCommands>
-    </CustomCommands>    
+    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -188,6 +188,7 @@
     <Content Include="Content\media\devpost.svg" />
     <Content Include="Static\Snake\index.html" />
     <Content Include="Static\Snake\main.css" />
+    <Content Include="Views\Shared\_Navbar.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
