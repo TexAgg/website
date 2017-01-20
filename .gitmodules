@@ -22,3 +22,6 @@
 [submodule "website/Static/Snake"]
 	path = website/Static/Snake
 	url = https://gaikema@bitbucket.org/gaikema/snake.git
+[submodule "AsciiArt"]
+	path = AsciiArt
+	url = https://github.com/TexAgg/AsciiArt.git
