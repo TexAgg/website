@@ -289,10 +289,4 @@
     <Folder Include="Views\Graph\" />
     <Folder Include="Views\AsciiConvert\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AsciiArt\AsciiArt.csproj">
-      <Project>{C5257EF9-D264-471C-8551-1415D73A5C64}</Project>
-      <Name>AsciiArt</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
