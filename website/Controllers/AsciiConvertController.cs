@@ -38,11 +38,14 @@ namespace website.Controllers
 			Image img = Image.FromStream(model.File.InputStream, true, true);
 			AsciiArt.AsciiArt ascii;
 
-			if (model.Height != null && model.Width == null)
+			// Valid height, invalid width.
+			if (model.Height != null && model.Height > 0 && (model.Width == null || model.Width <= 0))
 				ascii = new AsciiArt.AsciiArt(img, model.Height.Value, model.Height.Value);
-			else if (model.Width != null && model.Height == null)
+			// Valid width, invalid height.
+			else if ((model.Width != null || model.Width <= 0) && model.Height == null && model.Height > 0)
 				ascii = new AsciiArt.AsciiArt(img, model.Width.Value, model.Width.Value);
-			else if (model.Height != null && model.Width != null)
+			// Both inputs valid.
+			else if (model.Height != null && model.Height > 0 && model.Width != null && model.Width > 0)
 				ascii = new AsciiArt.AsciiArt(img, model.Width.Value, model.Height.Value);
 			else
 				ascii = new AsciiArt.AsciiArt(img);
