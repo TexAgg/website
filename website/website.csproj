@@ -104,6 +104,7 @@
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -128,6 +129,8 @@
     <Compile Include="Data\SkillsRepository.cs" />
     <Compile Include="Utilities\HTMLUtilities.cs" />
     <Compile Include="Controllers\GraphController.cs" />
+    <Compile Include="Models\AsciiImage.cs" />
+    <Compile Include="Controllers\AsciiConvertController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -189,6 +192,7 @@
     <Content Include="Static\Snake\index.html" />
     <Content Include="Static\Snake\main.css" />
     <Content Include="Views\Shared\_Navbar.cshtml" />
+    <Content Include="Views\AsciiConvert\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -283,5 +287,12 @@
     <Folder Include="Utilities\" />
     <Folder Include="Data\" />
     <Folder Include="Views\Graph\" />
+    <Folder Include="Views\AsciiConvert\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AsciiArt\AsciiArt.csproj">
+      <Project>{C5257EF9-D264-471C-8551-1415D73A5C64}</Project>
+      <Name>AsciiArt</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

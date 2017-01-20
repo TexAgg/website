@@ -1,0 +1,17 @@
+﻿@model website.Models.AsciiImage
+
+<form action="" method="post" enctype="multipart/form-data">
+	<div>
+		@Html.LabelFor(model => model.File)
+		@Html.TextBoxFor(model => model.File, new { type = "file"})
+	</div>
+	<div>
+		@Html.LabelFor(model => model.Width)
+		@Html.TextBoxFor(model => model.Width, new {type = "number"})
+	</div>
+	<div>
+		@Html.LabelFor(model => model.Height)
+		@Html.TextBoxFor(model => model.Height, new {type = "number"})
+	</div>
+	<input type="submit"  />
+</form>
