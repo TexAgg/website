@@ -62,6 +62,7 @@
         <Command type="Custom" name="Update Modules" command="git submodule update --recursive --remote" workingdir="${SolutionDir}" />
         <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/timer" />
         <Command type="AfterBuild" command="webpack" workingdir="${ProjectDir}" />
+        <Command type="AfterBuild" command="yarn install --prod" workingdir="${ProjectDir}" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
