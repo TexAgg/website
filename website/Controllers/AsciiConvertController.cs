@@ -10,9 +10,16 @@ using System.Text;
 
 namespace website.Controllers
 {
-    public class AsciiConvertController : Controller
+    /// <summary>
+    /// ASCII converter controller.
+    /// </summary>
+	public class AsciiConvertController : Controller
     {
-        public ActionResult Index()
+        /// <summary>
+        /// Default landing page for this controller. 
+		/// The input page.
+        /// </summary>
+		public ActionResult Index()
         {
 			return View(new AsciiImage());
         }
@@ -40,8 +47,10 @@ namespace website.Controllers
 			else
 				ascii = new AsciiArt.AsciiArt(img);
 
-			return File( Encoding.UTF8.GetBytes(ascii.Generate()), "text/plain", "art.txt");
-			//return Content(ascii.Generate());
+			// http://stackoverflow.com/a/1569545/5415895
+			//return File(Encoding.UTF8.GetBytes(ascii.Generate()), "text/plain", "art.txt");
+			// For some reason this looks janky.
+			return Content(ascii.Generate(), "text/plain");
 		}
     }
 }
