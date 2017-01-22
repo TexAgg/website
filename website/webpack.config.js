@@ -19,8 +19,9 @@ module.exports = {
 		new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false })
 	],
 	module: {
-		loaders: [{ 
-				test: /\.css$/,                 
+		loaders: [
+			{ 
+				test: /\.css$/,				 
 				//include: [path.resolve(__dirname, "not_exist_path")],
 				loader: "style-loader!css-loader" 
 			}

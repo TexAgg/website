@@ -42,8 +42,8 @@
         <Command type="AfterBuild" command="make" workingdir="${ProjectDir}/Content/Resume" />
         <Command type="Custom" name="Update Modules" command="git submodule update --recursive --remote" workingdir="${SolutionDir}" />
         <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/timer" />
-        <Command type="AfterBuild" command="yarn install &amp;&amp; webpack" workingdir="${ProjectDir}" externalConsole="True" />
-        <Command type="AfterBuild" command="yarn install &amp;&amp; webpack" workingdir="${ProjectDir}/Static/Snake" externalConsole="True" />
+        <Command type="AfterBuild" command="bash frontend.sh" workingdir="${ProjectDir}" />
+        <Command type="AfterBuild" command="bash frontend.sh" workingdir="${ProjectDir}/Static/Snake" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -62,7 +62,7 @@
         <Command type="AfterBuild" command="make" workingdir="${ProjectDir}/Content/Resume" />
         <Command type="Custom" name="Update Modules" command="git submodule update --recursive --remote" workingdir="${SolutionDir}" />
         <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/timer" />
-        <Command type="AfterBuild" command="webpack" workingdir="${ProjectDir}" />
+        <Command type="AfterBuild" command="bash frontend.sh" workingdir="${ProjectDir}" />
         <Command type="AfterBuild" command="yarn install --prod" workingdir="${ProjectDir}" />
         <Command type="AfterBuild" command="bash release.sh" workingdir="${ProjectDir}/Static/Snake" />
       </CustomCommands>
