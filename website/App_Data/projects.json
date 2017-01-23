@@ -22,9 +22,17 @@
       "id": "pme",
       "name": "Math Club Website",
       "link": "https://peaceful-atoll-84937.herokuapp.com",
+      "img": "Content/media/Logo.svg",
       "tags": [
         "web"
       ]
+    },
+    {
+      "about": "AsciiArt takes a picture and transforms it into text.",
+      "id": "asciiart",
+      "name": "AsciiArt",
+      "link": "/AsciiConvert",
+      "tags": []
     },
     {
       "about": "PolyRoot is a Mathematica library which impliments various <a href=\"https://en.wikipedia.org/wiki/Root-finding_algorithm\">root-finding algorithms</a>. The source code can be found <a href=\"https://github.com/TexAgg/PolyRoot\">here</a>.",
