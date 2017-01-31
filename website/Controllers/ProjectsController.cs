@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 using website.Models;
 using website.Utilities;
 using website.Data;
+using System.Drawing;
 
 namespace website.Controllers
 {
@@ -92,6 +93,54 @@ namespace website.Controllers
 		public ActionResult Snake()
 		{
 			return Redirect("/Static/Snake/index.html");
+		}
+
+		/// <summary>
+		/// Show AsciiArt project.
+		/// Form not filled out.
+		/// </summary>
+		/// <returns>The art.</returns>
+		public ActionResult AsciiArt()
+		{
+			return View(new AsciiImage());
+		}
+
+		/// <summary>
+		/// Show AsciiArt project.
+		/// Form filled out.
+		/// </summary>
+		/// <returns>The art.</returns>
+		/// <param name="model">Model.</param>
+		[HttpPost]
+		public ActionResult AsciiArt(AsciiImage model)
+		{
+			if (!ModelState.IsValid)
+			{
+				// the user didn't upload any file =>
+				// render the same view again in order to display the error message
+				return Content("oops");
+			}
+
+			// http://stackoverflow.com/a/1171718/5415895
+			Image img = Image.FromStream(model.File.InputStream, true, true);
+			AsciiArt.AsciiArt ascii;
+
+			// Valid height, invalid width.
+			if (model.Height != null && model.Height > 0 && (model.Width == null || model.Width <= 0))
+				ascii = new AsciiArt.AsciiArt(img, model.Height.Value, model.Height.Value);
+			// Valid width, invalid height.
+			else if ((model.Width != null || model.Width <= 0) && model.Height == null && model.Height > 0)
+				ascii = new AsciiArt.AsciiArt(img, model.Width.Value, model.Width.Value);
+			// Both inputs valid.
+			else if (model.Height != null && model.Height > 0 && model.Width != null && model.Width > 0)
+				ascii = new AsciiArt.AsciiArt(img, model.Width.Value, model.Height.Value);
+			else
+				ascii = new AsciiArt.AsciiArt(img);
+
+			// http://stackoverflow.com/a/1569545/5415895
+			//return File(Encoding.UTF8.GetBytes(ascii.Generate()), "text/plain", "art.txt");
+			// For some reason this looks janky.
+			return Content(ascii.Generate(), "text/plain");
 		}
     }
 }

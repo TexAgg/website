@@ -133,7 +133,6 @@
     <Compile Include="Utilities\HTMLUtilities.cs" />
     <Compile Include="Controllers\GraphController.cs" />
     <Compile Include="Models\AsciiImage.cs" />
-    <Compile Include="Controllers\AsciiConvertController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -195,7 +194,7 @@
     <Content Include="Static\Snake\index.html" />
     <Content Include="Static\Snake\main.css" />
     <Content Include="Views\Shared\_Navbar.cshtml" />
-    <Content Include="Views\AsciiConvert\Index.cshtml" />
+    <Content Include="Views\Projects\AsciiArt.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -290,7 +289,6 @@
     <Folder Include="Utilities\" />
     <Folder Include="Data\" />
     <Folder Include="Views\Graph\" />
-    <Folder Include="Views\AsciiConvert\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AsciiArt\AsciiArt\AsciiArt.csproj">
