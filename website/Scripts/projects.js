@@ -13,35 +13,45 @@ for (var i = 0; i < projects.length; i++) {
 	projects[i].setAttribute("style", height);
 }
 
+var outerModal = document.createElement('div');
+outerModal.className += " modal fade";	
+outerModal.setAttribute("role", "dialog");
+outerModal.setAttribute('tabindex', '-1');
+
+var midModal = document.createElement('div');
+midModal.className += " modal-dialog";
+midModal.setAttribute('role', 'document');
+
+var innerModal = document.createElement('div');
+innerModal.className += ' modal-content';
+midModal.appendChild(innerModal);
+outerModal.appendChild(midModal);
+document.body.appendChild(outerModal);
+
+function showModal(elem) {
+	outerModal.id = elem.id + '-modal';
+	var p2 = elem.cloneNode(true);
+	p2.className = '';
+	innerModal.innerHTML = p2.outerHTML;
+}
+
 for (var i = 0; i < projects.length; i++) {
 	var p = projects[i];
-
-	// Create modal container
-	var outerModal = document.createElement('div');
-	outerModal.id = p.id + "-modal";
-	outerModal.className += " modal fade";	
-	outerModal.setAttribute("role", "dialog");
-	outerModal.setAttribute('tabindex', '-1');
-
-	var innerModal = document.createElement('div');
-	innerModal.className += " modal-dialog";
-
-	// http://stackoverflow.com/q/41987506/5415895
-	var p2 = p.cloneNode(true);
-	//innerModal.appendChild(p2);
-	//console.log(p2);
-	outerModal.appendChild(innerModal);
-	document.body.appendChild(outerModal);
-
-	p.onclick = function(){$(outerModal).modal("show");};
+	p.onclick = function(){
+		showModal(this);
+		$(outerModal).modal("toggle");
+	}
 }
 
 // https://gist.github.com/MrDys/3512455
 $(document).ready(function() {
-	var modals = document.getElementsByClassName('modal');
-	for (var i = 0; i < modals.length; i++) {
-		if(window.location.href.indexOf('#' + modals[i].id) != -1) {
-			$('#' + modals[i].id).modal('show');
-		}
+	var id = window.location.hash;
+	if (id) {
+		var regi = /(\w+)-modal/;
+		match = regi.exec(id);
+		if (match.length > 1) {
+			showModal(document.getElementById(match[1]));
+			$(outerModal).modal('show');
+	}
 	}
 });
