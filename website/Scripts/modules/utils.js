@@ -16,4 +16,23 @@ function httpGetAsync(theUrl, callback) {
     xmlHttp.send(null);
 }
 
-module.exports = {httpGetAsync: httpGetAsync};
+/**
+ * http://stackoverflow.com/a/9252908/5415895
+ */
+function removeStyles(el) {
+    el.removeAttribute('style');
+    //el.removeAttribute('class');
+
+    if(el.childNodes.length > 0) {
+        for(var child in el.childNodes) {
+            /* filter element nodes only */
+            if(el.childNodes[child].nodeType == 1)
+                removeStyles(el.childNodes[child]);
+        }
+    }
+}
+
+module.exports = {
+    httpGetAsync: httpGetAsync,
+    removeStyles: removeStyles
+};

@@ -1,3 +1,5 @@
+//var utils = require('./modules/utils');
+
 var projects = document.getElementsByClassName('project-wrapper');
 
 // Get the height of the tallest div.
@@ -12,6 +14,10 @@ for (var i = 0; i < projects.length; i++) {
 	var height = "height: " + max_height + "px";
 	projects[i].setAttribute("style", height);
 }
+
+/*
+This is disgusting code.
+*/
 
 var outerModal = document.createElement('div');
 outerModal.className += " modal fade";	
@@ -31,7 +37,18 @@ document.body.appendChild(outerModal);
 function showModal(elem) {
 	outerModal.id = elem.id + '-modal';
 	var p2 = elem.cloneNode(true);
-	p2.className = '';
+
+	// idk this makes it look better.
+	$(p2).removeAttr('id');
+	$(p2).removeAttr('class');
+	//$(p2).removeAttr('style');
+	p2.setAttribute('style', 'padding: 10px;')
+	// Reset class.
+	var imgs = p2.getElementsByTagName('img');
+	for (var i = 0; i < imgs.length; i++) {
+		imgs[i].className = "proj-modal";
+	}
+
 	innerModal.innerHTML = p2.outerHTML;
 }
 
@@ -43,7 +60,6 @@ for (var i = 0; i < projects.length; i++) {
 	}
 }
 
-// https://gist.github.com/MrDys/3512455
 $(document).ready(function() {
 	var id = window.location.hash;
 	if (id) {
