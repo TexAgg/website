@@ -1,5 +1,3 @@
-//var utils = require('./modules/utils');
-
 var projects = document.getElementsByClassName('project-wrapper');
 
 // Get the height of the tallest div.
@@ -41,7 +39,6 @@ function showModal(elem) {
 	// idk this makes it look better.
 	$(p2).removeAttr('id');
 	$(p2).removeAttr('class');
-	//$(p2).removeAttr('style');
 	p2.setAttribute('style', 'padding: 10px;')
 	// Reset class.
 	var imgs = p2.getElementsByTagName('img');
@@ -50,8 +47,10 @@ function showModal(elem) {
 	}
 
 	innerModal.innerHTML = p2.outerHTML;
+	window.location.hash = outerModal.id;
 }
 
+// Add modal toggle to each project.
 for (var i = 0; i < projects.length; i++) {
 	var p = projects[i];
 	p.onclick = function(){
