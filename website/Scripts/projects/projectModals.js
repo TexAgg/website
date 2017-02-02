@@ -46,6 +46,12 @@ for (var i = 0; i < projects.length; i++) {
 	}
 }
 
+// Remove hash on modal close. 
+$('.modal').on('hidden.bs.modal', function (e) {
+	// http://stackoverflow.com/a/9643338/5415895
+	history.pushState("", document.title, window.location.pathname);
+})
+
 // Show modal if its id is in the url.
 $(document).ready(function() {
 	var id = window.location.hash;
