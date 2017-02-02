@@ -1,21 +1,8 @@
-var projects = document.getElementsByClassName('project-wrapper');
-
-// Get the height of the tallest div.
-var max_height = -1;
-for (var i = 0; i < projects.length; i++) {
-	// http://stackoverflow.com/a/15615701/5415895
-	max_height = Math.max(max_height, projects[i].clientHeight);
-}
-
-// Make all the divs the same height.
-for (var i = 0; i < projects.length; i++) {
-	var height = "height: " + max_height + "px";
-	projects[i].setAttribute("style", height);
-}
-
 /*
-This is disgusting code.
+	Handles the project modals.
 */
+
+var projects = document.getElementsByClassName('project-wrapper');
 
 var outerModal = document.createElement('div');
 outerModal.className += " modal fade";	
@@ -59,6 +46,7 @@ for (var i = 0; i < projects.length; i++) {
 	}
 }
 
+// Show modal if its id is in the url.
 $(document).ready(function() {
 	var id = window.location.hash;
 	if (id) {

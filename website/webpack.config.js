@@ -8,7 +8,10 @@ module.exports = {
 		main: "./main.js", 
 		// Resume bundle
 		resume: "./resumeButtons.js",
-		projects: "./projects.js"
+		projects: [
+			"./projects/resize.js", 
+			"./projects/projectModals.js"
+		]
 	},
 	output: {
 		path: __dirname + "/dist",
