@@ -46,15 +46,18 @@ footer {
 }
 
 .proj {
+	display: none;
+
+	/*
 	position: relative;
 	border-color: gray;
 	border-width: 3px;
 	border-style: outset;
 	opacity: 0.4;
-	/*width: 13%;*/
 	width: 300px;
 	height: 300px;
 	border-radius: 15px;
+	*/
 }
 
 .proj:hover {
@@ -71,11 +74,12 @@ footer {
 }
 
 .project-wrapper {
-	/* 
-	If the borders aren't hidden,
-	the divs will all be different sizes.
-	*/
-	border-style: hidden;
+	border-style: solid;
+	border-radius: 15px;
+	border-color: rgba(220,220,220, 0.8);
+	border-width: 1px;
+	/* http://stackoverflow.com/a/8809958/5415895 */
+	cursor: pointer;
 }
 
 .sidebar  {
