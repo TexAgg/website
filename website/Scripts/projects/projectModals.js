@@ -47,10 +47,19 @@ for (var i = 0; i < projects.length; i++) {
 }
 
 // Remove hash on modal close. 
-$('.modal').on('hidden.bs.modal', function (e) {
+$(outerModal).on('hidden.bs.modal', function (e) {
 	// http://stackoverflow.com/a/9643338/5415895
 	history.pushState("", document.title, window.location.pathname);
 })
+
+// Hide modal on smaller screens.
+// http://stackoverflow.com/a/29584202/5415895
+$(outerModal).on('shown.bs.modal', function() {
+    var width = $(window).width();  
+    if(width < 480){
+		$(this).hide(); 
+    }
+});
 
 // Show modal if its id is in the url.
 $(document).ready(function() {
@@ -61,6 +70,6 @@ $(document).ready(function() {
 		if (match.length > 1) {
 			showModal(document.getElementById(match[1]));
 			$(outerModal).modal('show');
-	}
+		}
 	}
 });
