@@ -47,21 +47,6 @@ footer {
 
 .proj {
 	display: none;
-
-	/*
-	position: relative;
-	border-color: gray;
-	border-width: 3px;
-	border-style: outset;
-	opacity: 0.4;
-	width: 300px;
-	height: 300px;
-	border-radius: 15px;
-	*/
-}
-
-.proj:hover {
-	opacity: 1.0;
 }
 
 .proj-modal {
@@ -71,6 +56,10 @@ footer {
 	display: block;
 	margin: 0 auto;
 	border-radius: 20px;
+}
+
+.proj-modal:hover {
+	opacity: 0.7;
 }
 
 .project-wrapper {
