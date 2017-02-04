@@ -9,6 +9,7 @@ website/Content/media/resume
 website/Scripts/*.min.js
 # Third-party static bundles
 website/dist
+*.db
 
 ## Bundled scripts
 website/Scripts/*.min.js

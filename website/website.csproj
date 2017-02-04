@@ -37,13 +37,42 @@
     <DocumentationFile>bin\website.xml</DocumentationFile>
     <CustomCommands>
       <CustomCommands>
-        <Command type="AfterBuild" command="tsc" workingdir="${ProjectDir}/Static/Bubble" />
-        <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/Stoplight" />
-        <Command type="AfterBuild" command="make" workingdir="${ProjectDir}/Content/Resume" />
-        <Command type="Custom" name="Update Modules" command="git submodule update --recursive --remote" workingdir="${SolutionDir}" />
-        <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/timer" />
-        <Command type="AfterBuild" command="bash frontend.sh" workingdir="${ProjectDir}" />
-        <Command type="AfterBuild" command="bash release.sh" workingdir="${ProjectDir}/Static/Snake" />
+        <Command>
+          <type>AfterBuild</type>
+          <command>tsc</command>
+          <workingdir>${ProjectDir}/Static/Bubble</workingdir>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>python build.py</command>
+          <workingdir>${ProjectDir}/Static/Stoplight</workingdir>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>make</command>
+          <workingdir>${ProjectDir}/Content/Resume</workingdir>
+        </Command>
+        <Command>
+          <type>Custom</type>
+          <name>Update Modules</name>
+          <command>git submodule update --recursive --remote</command>
+          <workingdir>${SolutionDir}</workingdir>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>python build.py</command>
+          <workingdir>${ProjectDir}/Static/timer</workingdir>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>bash frontend.sh</command>
+          <workingdir>${ProjectDir}</workingdir>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>bash release.sh</command>
+          <workingdir>${ProjectDir}/Static/Snake</workingdir>
+        </Command>
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -57,14 +86,47 @@
     <Prefer32Bit>false</Prefer32Bit>
     <CustomCommands>
       <CustomCommands>
-        <Command type="AfterBuild" command="tsc" workingdir="${ProjectDir}/Static/Bubble" />
-        <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/Stoplight" />
-        <Command type="AfterBuild" command="make" workingdir="${ProjectDir}/Content/Resume" />
-        <Command type="Custom" name="Update Modules" command="git submodule update --recursive --remote" workingdir="${SolutionDir}" />
-        <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/timer" />
-        <Command type="AfterBuild" command="bash frontend.sh" workingdir="${ProjectDir}" />
-        <Command type="AfterBuild" command="yarn install --prod" workingdir="${ProjectDir}" />
-        <Command type="AfterBuild" command="bash release.sh" workingdir="${ProjectDir}/Static/Snake" />
+        <Command>
+          <type>AfterBuild</type>
+          <command>tsc</command>
+          <workingdir>${ProjectDir}/Static/Bubble</workingdir>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>python build.py</command>
+          <workingdir>${ProjectDir}/Static/Stoplight</workingdir>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>make</command>
+          <workingdir>${ProjectDir}/Content/Resume</workingdir>
+        </Command>
+        <Command>
+          <type>Custom</type>
+          <name>Update Modules</name>
+          <command>git submodule update --recursive --remote</command>
+          <workingdir>${SolutionDir}</workingdir>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>python build.py</command>
+          <workingdir>${ProjectDir}/Static/timer</workingdir>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>bash frontend.sh</command>
+          <workingdir>${ProjectDir}</workingdir>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>yarn install --prod</command>
+          <workingdir>${ProjectDir}</workingdir>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>bash release.sh</command>
+          <workingdir>${ProjectDir}/Static/Snake</workingdir>
+        </Command>
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
