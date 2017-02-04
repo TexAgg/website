@@ -9,7 +9,8 @@ website/Content/media/resume
 website/Scripts/*.min.js
 # Third-party static bundles
 website/dist
-*.db
+# http://stackoverflow.com/a/4385764/5415895
+website/App_Data/my_website.db
 
 ## Bundled scripts
 website/Scripts/*.min.js

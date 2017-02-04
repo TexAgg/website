@@ -28,3 +28,8 @@ Building my [resume](https://github.com/TexAgg/Resume#building) is more complex.
 I developed this on Linux using Mono.
 It runs on Windows, but only after I changed the target runtime from 4.5 to 4.0, then to 3.5, then back to 4.5 in Visual Studio.
 I have no idea why this worked.
+
+---
+
+## Resources
+* [SQLite3](http://stackoverflow.com/a/4385764/5415895)
