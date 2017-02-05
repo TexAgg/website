@@ -23,11 +23,11 @@ The purpose of Show is to display output,
 so Mathematica doesn't like a Show statement to be followed by a semicolon. *)
 graphic = Show[g, Background->LightBlue, ImageSize->{{1900}, {1900}}];
 (* Crop the image. *)
-ImageCrop[graphic, {1800, 400}]
-Export["graph.png", %]
+croppedGraphic = ImageCrop[graphic, {1800, 400}];
+Export["graph.png", croppedGraphic]
 (* Create a placeholder image for projects. *)
-ImageCrop[graphic, {700, 400}]
-Export["placeholder.png", %]
+placeholder = ImageCrop[graphic, {700, 400}];
+Export["placeholder.png", placeholder]
 
 
 (* End *)

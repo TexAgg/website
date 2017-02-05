@@ -3,14 +3,14 @@
  */
 
 // Import css.
-require("../node_modules/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css");
+require("../../node_modules/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css");
 require('bootstrap-switch');
 
 $("[name='my-checkbox']").bootstrapSwitch();
 // http://www.bootstrap-switch.org/events.html
 $('input[name="my-checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {
 
-	var img = document.getElementById("image");
+	var img = document.getElementById("resume-image");
 	var pdf_link = document.getElementById('pdf_link');
 
 	if (state) {

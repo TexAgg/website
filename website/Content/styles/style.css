@@ -75,19 +75,6 @@ footer {
 	opacity: 0.8;
 }
 
-.sidebar  {
-	/*width: 150px;*/
-	width: auto;
-	float: left; 
-	height: 200px;
-	/* Uncomment this to make the menu sticky. */
-	/*position: fixed;*/
-}
-
-#sidebar-menu {
-	width: 13vw;
-}
-
 /* http://stackoverflow.com/a/26032279/5415895 */
 @media only screen and (max-width: 760px) {
 	.hidden-phone
@@ -95,6 +82,8 @@ footer {
 		display: none;
 	}
 }
+
+/* Apply to Resume */
 
 #resume_img {
 	margin-top: 10px;
@@ -113,7 +102,6 @@ footer {
 #resume-back2top {
 	text-align: center;
 }
-
 
 /* Apply to contacts. */
 

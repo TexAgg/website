@@ -7,7 +7,7 @@ module.exports = {
 		// Main bundle
 		main: "./main.js", 
 		// Resume bundle
-		resume: "./resumeButtons.js",
+		resume: "./resume/resumeButtons.js",
 		projects: [
 			"./projects/resize.js", 
 			"./projects/projectModals.js"

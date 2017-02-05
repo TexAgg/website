@@ -24,6 +24,8 @@ Each subproject has a README which should detail specific requirements,
 but most subprojects require Python 2 and NodeJS along with TypeScript, UglifyJS, and Browserify.
 Building my [resume](https://github.com/TexAgg/Resume#building) is more complex.
 
+[Webpack](https://webpack.github.io/) is also needed to compile most of the javascript.
+
 ### Running
 I developed this on Linux using Mono.
 It runs on Windows, but only after I changed the target runtime from 4.5 to 4.0, then to 3.5, then back to 4.5 in Visual Studio.
