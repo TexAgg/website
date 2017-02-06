@@ -11,6 +11,7 @@ website/Scripts/*.min.js
 website/dist
 # http://stackoverflow.com/a/4385764/5415895
 website/App_Data/my_website.db
+.nuget/
 
 ## Bundled scripts
 website/Scripts/*.min.js
