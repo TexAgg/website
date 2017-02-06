@@ -10,11 +10,13 @@ namespace website.Controllers
 {
     /// <summary>
     /// Blog controller.
+	/// I'll add it to the navbar if I ever actually post.
     /// </summary>
 	public class BlogController : Controller
     {
 		// http://stackoverflow.com/a/5103589/5415895
 		Atom10FeedFormatter _feed;
+		// Map title to blog post. This means that if 2 posts have the same title, tough luck.
 		Dictionary<String, SyndicationItem> _posts;
 
 		/// <summary>
@@ -49,6 +51,10 @@ namespace website.Controllers
 		/// <param name="title">Title.</param>
 		public ActionResult Post(string title)
 		{
+			// http://stackoverflow.com/a/9710689/5415895
+			if (!_posts.ContainsKey(title))
+				return HttpNotFound();
+
 			return View(_posts[title]);
 		}
     }
