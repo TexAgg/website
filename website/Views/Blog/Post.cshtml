@@ -1,0 +1,16 @@
+﻿@using System.ServiceModel.Syndication
+@model SyndicationItem
+
+<div class="container panel panel-default">
+	<div class="panel-heading">
+		<h2>@Model.Title.Text</h2>
+	</div>
+	@* http://stackoverflow.com/a/2958267/5415895 *@
+	<div>
+		@{
+		TextSyndicationContent tsc = (TextSyndicationContent)Model.Content;
+		string myContent = tsc.Text;
+		}
+		@Html.Raw(@myContent)
+	</div>
+</div>

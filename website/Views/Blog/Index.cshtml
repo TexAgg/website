@@ -1,5 +1,16 @@
-﻿<div id='resume' class="container panel panel-default">
+﻿@using System.ServiceModel.Syndication
+@model SyndicationFeed
+
+<div class="container panel panel-default">
 	<div class="panel-heading">
 		<h2>@ViewContext.RouteData.Values["Controller"]</h2>
+	</div>
+	<div>
+		<ul class="list-group">
+			@foreach(var i in @Model.Items)
+			{
+				<li class="list-group-item">@Html.ActionLink(@i.Title.Text,"Post", "Blog", new{title=@i.Title.Text}, null)</li>
+			}
+		</ul>
 	</div>
 </div>
