@@ -142,5 +142,30 @@ namespace website.Controllers
 			// For some reason this looks janky.
 			return Content(ascii.Generate(), "text/plain");
 		}
+
+		/// <summary>
+		/// Landing page for markov text generator.
+		/// </summary>
+		public ActionResult Markov()
+		{
+			return View(new MarkovForm());
+		}
+
+		/// <summary>
+		/// Markov the specified model.
+		/// </summary>
+		/// <param name="model">Model.</param>
+		[HttpPost]
+		public ActionResult Markov(MarkovForm model)
+		{
+			if (!ModelState.IsValid)
+			{
+				return Content("oops");
+			}
+
+			MarkovSharp.Markov mark = new MarkovSharp.Markov(model.Text, 1);
+
+			return Content(mark.Generate(), "text/plain");
+		}
     }
 }

@@ -85,7 +85,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.ServiceModel" />
-     <Reference Include="Microsoft.Web.Infrastructure">
+    <Reference Include="Microsoft.Web.Infrastructure">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor">
@@ -135,6 +135,7 @@
     <Compile Include="Controllers\GraphController.cs" />
     <Compile Include="Models\AsciiImage.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Models\MarkovForm.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -199,6 +200,7 @@
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Blog\Post.cshtml" />
     <Content Include="packages.config" />
+    <Content Include="Views\Projects\Markov.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -295,9 +297,13 @@
     <Folder Include="Views\Graph\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AsciiArt\AsciiArt\AsciiArt.csproj">
+    <ProjectReference Include="..\modules\AsciiArt\AsciiArt\AsciiArt.csproj">
       <Project>{C5257EF9-D264-471C-8551-1415D73A5C64}</Project>
       <Name>AsciiArt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\modules\MarkovSharp\MarkovSharp\MarkovSharp.csproj">
+      <Project>{6A5F40F4-3BB1-4995-BCCE-53E37DA14673}</Project>
+      <Name>MarkovSharp</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

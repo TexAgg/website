@@ -1,0 +1,16 @@
+﻿@model website.Models.MarkovForm
+
+<div class="container panel panel-default">
+	<div class="panel-heading">
+		<h2>@ViewContext.RouteData.Values["Controller"]</h2>
+	</div>
+
+	<div class="container">
+		<form action="" id="markov-form" method="post">
+			<div class="form-group">
+				@Html.TextAreaFor(model => model.Text, new {type="text", @class="form-control", rows=20, cols=60})
+			</div>
+			<input type="submit" class="btn btn-default" />
+		</form>
+	</div>
+</div>
