@@ -23,5 +23,8 @@
 	path = website/Static/Snake
 	url = https://gaikema@bitbucket.org/gaikema/snake.git
 [submodule "AsciiArt"]
-	path = AsciiArt
+	path = modules/AsciiArt
 	url = https://github.com/TexAgg/AsciiArt.git
+[submodule "modules/MarkovSharp"]
+	path = modules/MarkovSharp
+	url = https://gaikema@bitbucket.org/gaikema/markovsharp.git
