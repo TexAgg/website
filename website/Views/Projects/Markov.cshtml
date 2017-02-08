@@ -4,11 +4,16 @@
 	<div class="panel-heading">
 		<h2>@ViewContext.RouteData.Values["Controller"]</h2>
 	</div>
-
 	<div class="container">
+		<div>
+			<h3>Markov Text Generator</h3>
+			<p>
+			A Markov text generator. Takes in input and produces realistic seeming gibberish.
+			</p>
+		</div>
 		<form action="" id="markov-form" method="get">
 			<div class="form-group">
-				@Html.TextAreaFor(model => model.Text, new {type="text", @class="form-control", rows=20, cols=60})
+				@Html.TextAreaFor(model => model.Text, new {type="text", @class="form-control", rows=20, cols=60, style="width:98%;"})
 			</div>
 			<input type="submit" class="btn btn-default" />
 		</form>
