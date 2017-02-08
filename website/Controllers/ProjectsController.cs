@@ -155,12 +155,13 @@ namespace website.Controllers
 		/// Markov the specified model.
 		/// </summary>
 		/// <param name="model">Model.</param>
-		[HttpPost]
+		[HttpGet]
 		public ActionResult Markov(MarkovForm model)
 		{
 			if (!ModelState.IsValid)
 			{
-				return Content("oops");
+				// Redirect to form.
+				return Markov();
 			}
 
 			MarkovSharp.Markov mark = new MarkovSharp.Markov(model.Text, 1);
