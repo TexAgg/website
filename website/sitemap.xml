@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.mattgaikema.com/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Projects</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Research</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Hackathons</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Skills</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Resume</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Contact</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Graph</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Projects/AsciiArt</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Static/flap_god2/flap_god2/index.html</loc>
+  <lastmod>2017-02-06T20:04:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Static/triangle_calculator/triangle_calculator/index.html</loc>
+  <lastmod>2017-02-06T20:04:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Static/Bubble/index.html</loc>
+  <lastmod>2017-02-06T20:04:37+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Content/Resume/resume.pdf</loc>
+  <lastmod>2017-02-07T22:47:29+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

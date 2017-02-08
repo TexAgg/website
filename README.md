@@ -35,3 +35,4 @@ I have no idea why this worked.
 
 ## Resources
 * [SQLite3](http://stackoverflow.com/a/4385764/5415895)
+* [Sitemap generator](https://www.xml-sitemaps.com/)
