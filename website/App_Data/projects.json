@@ -44,7 +44,7 @@
       ]
     },
     {
-      "about": "A basic Markov text generator written in C++. View the source code <a href=\"https://github.com/TexAgg/MarkovTextGenerator\">here</a>. \nI also created an implementation in PHP <a href=\"https://bitbucket.org/gaikema/markovbot/overview\">here</a>.",
+      "about": "A basic Markov text generator written in C++. View the source code <a href=\"https://github.com/TexAgg/MarkovTextGenerator\">here</a>. \nI also created an implementation in PHP <a href=\"https://bitbucket.org/gaikema/markovbot/overview\">here</a>. \n\nTry it <a href='/Projects/Markov'>here</a>!",
       "id": "markov",
       "name": "Markov Text Generator",
       "link": "https://github.com/TexAgg/MarkovTextGenerator",

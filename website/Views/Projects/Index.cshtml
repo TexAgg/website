@@ -50,7 +50,22 @@
 
 				count++;
 			}
-		</div>
+		</div><!-- projects-body -->
+	</div>
+	<!--
+	These are more just fun things to play with, and not necesarily cool applications,
+	so I don't want to display them with the rest of the projects.
+	But I want links to these projects so search engines can find them.
+	So I made them hidden.
+	-->
+	<div style="display: none;">
+		<h2>Javascript Projects</h2>
+		<p>
+			These are various projects I have made using the Javascript canvas.
+		</p>
+		<ul>
+			<li>@Html.ActionLink("Snake", "Snake", "Projects")</li>
+		</ul>
 	</div>
 </div>
 <script src="@Url.Content("~/dist/projects.min.js")"></script>
