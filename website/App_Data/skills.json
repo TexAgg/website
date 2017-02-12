@@ -1,21 +1,22 @@
 {
   "proficient": [
     "C++",
-    "LaTeX",
-    "R"
+    "C#",
+    "Mathematica",
+    "LaTeX"
   ],
   "familiar": [
     "Javascript",
     "Java",
-    "Mathematica",
-    "C#",
     "PHP",
-    "Python"
+    "Python",
+    "R",
+    "Matlab"
   ],
   "software": [
     "Git",
     "Linux",
-	"MySQL",
+	  "MySQL",
     "CMake",
     "ASP.NET MVC",
     "Flask",
