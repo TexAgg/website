@@ -22,6 +22,7 @@ Export["graph.gv", g, "DOT"]
 The purpose of Show is to display output, 
 so Mathematica doesn't like a Show statement to be followed by a semicolon. *)
 graphic = Show[g, Background->LightBlue, ImageSize->{{1900}, {1900}}];
+Export["graph.svg", graphic]
 (* Crop the image. *)
 croppedGraphic = ImageCrop[graphic, {1800, 400}];
 Export["graph.png", croppedGraphic]
