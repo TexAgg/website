@@ -44,6 +44,7 @@
         <Command type="AfterBuild" command="python build.py" workingdir="${ProjectDir}/Static/timer" />
         <Command type="AfterBuild" command="bash frontend.sh" workingdir="${ProjectDir}" />
         <Command type="AfterBuild" command="bash release.sh" workingdir="${ProjectDir}/Static/Snake" />
+        <Command type="AfterBuild" command="make release" workingdir="${ProjectDir}/Static/Emojify" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -65,6 +66,7 @@
         <Command type="AfterBuild" command="bash frontend.sh" workingdir="${ProjectDir}" />
         <Command type="AfterBuild" command="yarn install --prod" workingdir="${ProjectDir}" />
         <Command type="AfterBuild" command="bash release.sh" workingdir="${ProjectDir}/Static/Snake" />
+         <Command type="AfterBuild" command="make release" workingdir="${ProjectDir}/Static/Emojify" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>

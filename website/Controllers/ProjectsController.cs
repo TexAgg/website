@@ -96,6 +96,14 @@ namespace website.Controllers
 		}
 
 		/// <summary>
+		/// Redirect to Emojify.
+		/// </summary>
+		public ActionResult Emojify()
+		{
+			return Redirect("/Static/Emojify/index.html");
+		}
+
+		/// <summary>
 		/// Show AsciiArt project.
 		/// Form not filled out.
 		/// </summary>

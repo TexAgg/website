@@ -28,3 +28,6 @@
 [submodule "modules/MarkovSharp"]
 	path = modules/MarkovSharp
 	url = https://gaikema@bitbucket.org/gaikema/markovsharp.git
+[submodule "website/Static/Emojify"]
+	path = website/Static/Emojify
+	url = https://gaikema@bitbucket.org/gaikema/emojify.git

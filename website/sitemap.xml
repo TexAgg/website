@@ -8,80 +8,66 @@
 
 <url>
   <loc>http://www.mattgaikema.com/</loc>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Projects</loc>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Research</loc>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Hackathons</loc>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Skills</loc>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Resume</loc>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Contact</loc>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Blog</loc>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Graph</loc>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Projects/AsciiArt</loc>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Projects/Markov</loc>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Static/flap_god2/flap_god2/index.html</loc>
   <lastmod>2017-02-06T20:04:53+00:00</lastmod>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Static/triangle_calculator/triangle_calculator/index.html</loc>
   <lastmod>2017-02-06T20:04:53+00:00</lastmod>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Static/Bubble/index.html</loc>
   <lastmod>2017-02-06T20:04:37+00:00</lastmod>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Static/Snake/index.html</loc>
   <lastmod>2017-02-06T20:04:35+00:00</lastmod>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Static/Stoplight/index.html</loc>
   <lastmod>2017-02-06T20:04:39+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.mattgaikema.com/Static/Emojify/index.html</loc>
+  <lastmod>2017-02-15T16:47:55+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Content/Resume/resume.pdf</loc>
   <lastmod>2017-02-11T01:58:24+00:00</lastmod>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.mattgaikema.com/Blog/Post?title=An%20introduction%20to%20CMake</loc>
-  <changefreq>weekly</changefreq>
 </url>
 </urlset>
