@@ -69,42 +69,6 @@
       ]
     },
     {
-      "about": "Based on <a href='https://github.com/TexAgg/FlapGod'>Flap God,</a> Flap God 2 is a game about <a href='https://en.wikipedia.org/wiki/Pancake_sorting'>pancake sorting.</a> The object of the game is to get the pancakes sorted from smallest to largest in as few flips as possible. Works best on Google Chrome.",
-      "display": "<a href='~/Projects/FlapGod2'><img id='pancakes' class='proj' src='Content/media/pancakes.PNG'></img></a>",
-      "id": "flap",
-      "name": "Flap God 2",
-      "link": "/Projects/FlapGod2",
-      "img": "Content/media/pancakes.PNG",
-      "tags": [
-        "javascript",
-        "canvas"
-      ]
-    },
-    {
-      "about": "Enter three sides of the triangle and, using Heron's formula, this will calculate the area and draw the triangle. Click <a href='https://github.com/TexAgg/TriangleCalculator'>here</a> for the source code.",
-      "display": "<a href='~/Projects/TriangleCalculator' target='_blank'><img id='triangle_img' class='proj' src='Content/media/triangle.PNG'></img></a>",
-      "id": "triangle",
-      "name": "Triangle Calculator",
-      "link": "/Projects/TriangleCalculator",
-      "img": "Content/media/triangle.PNG",
-      "tags": [
-        "javascript",
-        "canvas"
-      ]
-    },
-    {
-      "about": "Bubbles will float around aimlessly, heading the opposite direction whenever colliding with a wall or another bubble. Works best on Google Chrome. Click <a href='https://github.com/TexAgg/Bubble'>here</a> for the source code.",
-      "display": "<a href='~/Projects/Bubble'><img id='bubble_img' class='proj' src='Content/media/bubbles.PNG'></img></a>",
-      "id": "bubble",
-      "name": "Bubble",
-      "link": "/Projects/Bubble",
-      "img": "Content/media/bubbles.PNG",
-      "tags": [
-        "javascript",
-        "canvas"
-      ]
-    },
-    {
       "about": "<a href='https://www.facebook.com/profile.php?id=100010461758967&fref=ts'>Dank Sinatra</a> is a Facebook chatbot. He is written in JavaScript (using Node.js) and a smidgen of Python. Type '\\help' to see a list of his available commands. He also pushes relevant messages to a database, sends me email updates, and posts weather updates every 3 hours, but new features are constantly being added. I hope to one day make him a full-on companion, such as Siri or Watson (albiet not as realistic). For more information, see <a href=\"https://bitbucket.org/gaikema/danksinatra/wiki/Home\">here.</a>",
       "display": "<a href='https://www.facebook.com/profile.php?id=100010461758967&fref=ts'><img class='proj' src='Content/media/fb_icon_325x325.png'></img></a></a>",
       "id": "dank",
