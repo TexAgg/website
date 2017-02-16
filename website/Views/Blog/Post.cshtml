@@ -1,6 +1,11 @@
 ﻿@using System.ServiceModel.Syndication
 @model SyndicationItem
 
+@section AdditionalMeta
+{
+    <meta name="robots" content="noindex,nofollow"/>
+}
+
 <div class="container panel panel-default">
 	<div class="panel-heading">
 		<h2>@Model.Title.Text</h2>
