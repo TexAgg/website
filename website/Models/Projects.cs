@@ -17,6 +17,10 @@ namespace website.Models
 		/// List of projects.
 		/// </summary>
 		public List<Item> item { get; set; }
+		/// <summary>
+		/// List of Javascript apps.
+		/// </summary>
+		public List<string> jsApps { get; set; }
 
 		/// <summary>
 		/// Individual project.
