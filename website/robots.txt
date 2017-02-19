@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /Blog
-Disallow: /blog
 Disallow: /*.jpg
 Disallow: /*.png
+Disallow: /Contact
