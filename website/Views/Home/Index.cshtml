@@ -1,6 +1,22 @@
-﻿<script>
-	document.title = "Matt Gaikema";
-</script>
+﻿@section AdditionalMeta
+{
+	<script type="application/ld+json">
+	{
+	  	"@@context": "http://schema.org",
+	  	"@@type": "Person",
+	  	"name": "Matt Gaikema",
+	  	"url": "http://www.mattgaikema.com/",
+	 	"description": "Personal website for Matt Gaikema",
+	 	"email": "mailto:mgaikema1@gmail.com",
+	 	"alumniOf": "Texas A&M University",
+	 	"image": "@Url.Content("~/Content/media/me.jpg")"
+	}
+	</script>
+	<script>
+		document.title = "Matt Gaikema";
+	</script>
+}
+
 <div id='about' class="container panel panel-default">
 	<div class="panel-heading">
 		<h2>Matt Gaikema</h2>

@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /Blog
-
-User-agent: Googlebot-Image
+Disallow: /blog
 Disallow: /*.jpg
+Disallow: /*.png
