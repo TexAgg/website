@@ -17,5 +17,9 @@ var utils = require('./modules/utils');
 
 clippy.load('Clippy', function(agent) {
 	agent.show();
-	agent.speak("Hello! Welcome to the website of Matt Gaikema!");
+	if (window.location.pathname == "/Resume") {
+		agent.speak("Scroll down to download a PDF copy.");
+	}
+	else
+		agent.speak("Hello! Welcome to the website of Matt Gaikema!");
 });
