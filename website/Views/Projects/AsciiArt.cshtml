@@ -6,33 +6,33 @@
 	<div class="panel-heading">
 		<h2>@ViewContext.RouteData.Values["Controller"]</h2>
 	</div>
+	<div class="container content-wrapper">
+		<div>
+			<p>
+			Upload an image to have it converted to Ascii-Art.
+			The <b>Height</b> and <b>Width</b> inputs determine how many characters will be used.
+			If no values are provided, the number of pixels will be used. 
+			Keep in mind that this will result in a lot of text.
+			</p>
+			<p>
+			The source code for this can be found <a href="https://github.com/TexAgg/AsciiArt">here</a>.
+			</p>
+		</div>
 
-	<div>
-		<p>
-		Upload an image to have it converted to Ascii-Art.
-		The <b>Height</b> and <b>Width</b> inputs determine how many characters will be used.
-		If no values are provided, the number of pixels will be used. 
-		Keep in mind that this will result in a lot of text.
-		</p>
-		<p>
-		The source code for this can be found <a href="https://github.com/TexAgg/AsciiArt">here</a>.
-		</p>
+		<form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+			<div class="input-group">
+				@Html.LabelFor(model => model.File)
+				@Html.TextBoxFor(model => model.File, new { type = "file", @class = "form-control" })
+			</div>
+			<div class="input-group">
+				@Html.LabelFor(model => model.Width)
+				@Html.TextBoxFor(model => model.Width, new { type = "number", @class = "form-control" })
+			</div>
+			<div class="input-group">
+				@Html.LabelFor(model => model.Height)
+				@Html.TextBoxFor(model => model.Height, new { type = "number", @class = "form-control" })
+			</div>
+			<input type="submit" class="btn btn-default" />
+		</form>
 	</div>
-
-	<form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
-		<div class="input-group">
-			@Html.LabelFor(model => model.File)
-			@Html.TextBoxFor(model => model.File, new { type = "file", @class = "form-control" })
-		</div>
-		<div class="input-group">
-			@Html.LabelFor(model => model.Width)
-			@Html.TextBoxFor(model => model.Width, new { type = "number", @class = "form-control" })
-		</div>
-		<div class="input-group">
-			@Html.LabelFor(model => model.Height)
-			@Html.TextBoxFor(model => model.Height, new { type = "number", @class = "form-control" })
-		</div>
-		<input type="submit" class="btn btn-default" />
-	</form>
-
 </div>

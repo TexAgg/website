@@ -17,10 +17,7 @@ https://github.com/TexAgg/website/blob/1f52314c819ca853c045e0e4e4e036cc199c8207/
 		<h2>@Model.Title.Text</h2>
 	</div>
 	@* http://stackoverflow.com/a/2958267/5415895 *@
-	<div style="
-		margin-bottom: 10px;
-		margin-top: 10px;
-	">
+	<div class="container content-wrapper">
 		@{
 		TextSyndicationContent tsc = (TextSyndicationContent)Model.Content;
 		string myContent = tsc.Text;

@@ -1,5 +1,14 @@
 ﻿/* Apply to all pages. */
 
+/*
+	Apply to the div after the title.
+	Use in conjunction with Bootstrap's 'container' class.
+*/
+.content-wrapper {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
 body {
 	background-color: #f2f2f2;
 }
