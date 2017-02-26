@@ -19,7 +19,7 @@
 
 			<div class="panel-body">
 				<p>
-				@item.aboutHTML
+				@Html.Raw(@item.aboutHTML)
 				</p>
 				<p>
 				Worked under @String.Join(", ", item.advisors).
