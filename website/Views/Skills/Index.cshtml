@@ -4,20 +4,22 @@
 	<div class="panel-heading">
 		<h2>@ViewContext.RouteData.Values["Controller"]</h2>
 	</div>
-	<div class="panel">
-		<ul class="skills-list"><u>Proficient in:</u>
-		@foreach (var skill in Model.proficient)
-		{
-			<li>@skill</li>
-		}
-		</ul>
-	</div>
-	<div class="panel">
-		<ul class="skills-list"><u>Familiar with:</u>
-		@foreach (var skill in Model.familiar)
-		{
-			<li>@skill</li>
-		}
-		</ul>
-	</div>
+	<div class="panel-body">
+		<div class="panel">
+			<ul class="skills-list"><u>Proficient in:</u>
+			@foreach (var skill in Model.proficient)
+			{
+				<li>@skill</li>
+			}
+			</ul>
+		</div>
+		<div class="panel">
+			<ul class="skills-list"><u>Familiar with:</u>
+			@foreach (var skill in Model.familiar)
+			{
+				<li>@skill</li>
+			}
+			</ul>
+		</div> @* !panel *@
+	</div> @* !panel-body *@
 </div>

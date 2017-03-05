@@ -2,25 +2,27 @@
 	<div class="panel-heading">
 		<h2>@ViewContext.RouteData.Values["Controller"]</h2>
 	</div>
-	<ul class="list-group">
-		<!---
-			Icons:
-			https://www.iconfinder.com/icons/1220367/gmail_google_logo_icon#size=128
-			https://www.iconfinder.com/iconsets/logotypes
-		-->
-		@{
-			int sze = 28;
-			string cls = "contact-icon";
-		}
-		<li class="list-group-item"><a href='https://www.linkedin.com/in/matthew-gaikema'><img alt="LinkedIn" class="@cls" src="~/Content/media/linkedin.png" height="@sze" width="@sze">matthew-gaikema</a></li>
-		<li class="list-group-item"><a href='https://github.com/TexAgg'><img alt="Github" class="@cls" src="~/Content/media/github.png" height="@sze" width="@sze">TexAgg</a></li>
-		<li class="list-group-item">
-			<a href='mailto:mgaikema1@gmail.com'><img alt="gmail" class="@cls" src='~/Content/media/gmail.png' height="@sze" width="@sze">mgaikema1@gmail.com</a>
-		</li>
-		<li class="list-group-item"><a href="https://devpost.com/gaikema"><img alt="Devpost" class="@cls" src='~/Content/media/devpost.svg' height="@sze" width="@sze">gaikema</a></li>
-		@* Their servers can handle it. *@
-		<li class="list-group-item"><a href="https://leetcode.com/matt58/"><img alt="leetcode" class="@cls" src="https://leetcode.com/apple-touch-icon-180x180.png">matt58</a></li>
-		<li class="list-group-item"><a href="https://www.hackerrank.com/mgaikema1"><img alt="hackerrank" class="@cls" src="https://cdn.hrcdn.net/hackerrank/assets/brand/h_mark_sm-05bceb881aa02b72d688d21db01df5d8.png">mgaikema1</a></li>
-		@* https://en.gravatar.com/mgaikema1 *@
-	</ul>
+	<div class="panel-body">
+		<ul class="list-group">
+			<!---
+				Icons:
+				https://www.iconfinder.com/icons/1220367/gmail_google_logo_icon#size=128
+				https://www.iconfinder.com/iconsets/logotypes
+			-->
+			@{
+				int sze = 28;
+				string cls = "contact-icon";
+			}
+			<li class="list-group-item"><a href='https://www.linkedin.com/in/matthew-gaikema'><img alt="LinkedIn" class="@cls" src="~/Content/media/linkedin.png" height="@sze" width="@sze">matthew-gaikema</a></li>
+			<li class="list-group-item"><a href='https://github.com/TexAgg'><img alt="Github" class="@cls" src="~/Content/media/github.png" height="@sze" width="@sze">TexAgg</a></li>
+			<li class="list-group-item">
+				<a href='mailto:mgaikema1@gmail.com'><img alt="gmail" class="@cls" src='~/Content/media/gmail.png' height="@sze" width="@sze">mgaikema1@gmail.com</a>
+			</li>
+			<li class="list-group-item"><a href="https://devpost.com/gaikema"><img alt="Devpost" class="@cls" src='~/Content/media/devpost.svg' height="@sze" width="@sze">gaikema</a></li>
+			@* Their servers can handle it. *@
+			<li class="list-group-item"><a href="https://leetcode.com/matt58/"><img alt="leetcode" class="@cls" src="https://leetcode.com/apple-touch-icon-180x180.png">matt58</a></li>
+			<li class="list-group-item"><a href="https://www.hackerrank.com/mgaikema1"><img alt="hackerrank" class="@cls" src="https://cdn.hrcdn.net/hackerrank/assets/brand/h_mark_sm-05bceb881aa02b72d688d21db01df5d8.png">mgaikema1</a></li>
+			@* https://en.gravatar.com/mgaikema1 *@
+		</ul>
+	</div>
 </div><!--Connect-->

@@ -4,30 +4,31 @@
 	<div class="panel-heading">
 		<h2>@ViewContext.RouteData.Values["Controller"]</h2>
 	</div>
+	<div class="panel-body">
+		<div class="panel-group">
+		@foreach(var item in Model.item)
+		{
+			<div class="panel panel-default">
 
-	<div class="panel-group">
-	@foreach(var item in Model.item)
-	{
-		<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						@item.title
+					</h4>
+					@item.date
+				</div> @* !panel-heading *@
 
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					@item.title
-				</h4>
-				@item.date
-			</div> @* !panel-heading *@
+				<div class="panel-body">
+					<p>
+					@Html.Raw(@item.aboutHTML)
+					</p>
+					<p>
+					Worked under @String.Join(", ", item.advisors).
+					</p>
+				</div> @* !panel-body *@
 
-			<div class="panel-body">
-				<p>
-				@Html.Raw(@item.aboutHTML)
-				</p>
-				<p>
-				Worked under @String.Join(", ", item.advisors).
-				</p>
-			</div> @* !panel-body *@
-
-		</div> @* !panel-default *@
-	}
-	</div> @* !panel-group *@
+			</div> @* !panel-default *@
+		}
+		</div> @* !panel-group *@
+	</div> @* !panel-body *@
 
 </div>
