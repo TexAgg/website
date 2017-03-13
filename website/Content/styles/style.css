@@ -1,5 +1,11 @@
 ﻿/* Apply to all pages. */
 
+/* Main title for each page. */
+.page-title {
+	/* http://stackoverflow.com/a/29595733/5415895 */
+	text-transform: capitalize;
+}
+
 /*
 	Apply to the div after the title.
 	Use in conjunction with Bootstrap's 'container' class.
