@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title class="page-title">@ViewContext.RouteData.Values["Controller"]</title>
+	@* http://stackoverflow.com/a/72871/5415895 *@
+    <title>@System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(@ViewContext.RouteData.Values["Controller"].ToString())</title>
 
     <meta name='author' content='Matt Gaikema'>
 	<meta name='description' content='Mathematician and Computer Scientist'>
