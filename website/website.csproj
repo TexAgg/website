@@ -66,7 +66,7 @@
         <Command type="AfterBuild" command="bash frontend.sh" workingdir="${ProjectDir}" />
         <Command type="AfterBuild" command="yarn install --prod" workingdir="${ProjectDir}" />
         <Command type="AfterBuild" command="bash release.sh" workingdir="${ProjectDir}/Static/Snake" />
-         <Command type="AfterBuild" command="make release" workingdir="${ProjectDir}/Static/Emojify" />
+        <Command type="AfterBuild" command="make release" workingdir="${ProjectDir}/Static/Emojify" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -203,6 +203,7 @@
     <Content Include="Views\Blog\Post.cshtml" />
     <Content Include="packages.config" />
     <Content Include="Views\Projects\Markov.cshtml" />
+    <Content Include="Views\Contact\PromoCodes.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

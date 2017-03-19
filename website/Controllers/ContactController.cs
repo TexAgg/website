@@ -19,5 +19,16 @@ namespace website.Controllers
 		{
 			return View();
 		}
+
+		public ActionResult PromoCodes()
+		{
+			Dictionary<string, string> codes = new Dictionary<string, string>()
+			{
+				{"Uber", "https://www.uber.com/invite/mattg19585ue"},
+				{"Dropbox", "https://db.tt/UPxLPnE7"}
+			};
+
+			return View(codes);
+		}
 	}
 }
