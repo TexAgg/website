@@ -1,0 +1,10 @@
+﻿@model website.Models.Projects.Item
+
+<div class="container panel panel-default">
+	<div class="panel-heading">
+		<h2 class="page-title">@Model.name</h2>
+	</div>
+	<div class="panel-body">
+		@Html.Raw(@Model.about)
+	</div>
+</div>

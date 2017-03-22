@@ -22,6 +22,7 @@ namespace website.Controllers
 		/// The projects repository.
 		/// </summary>
 		private ProjectsRepository _projectsRepository = null;
+		private Dictionary<string, Projects.Item> _projectNames;
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="website.Controllers.ProjectsController"/> class.
@@ -29,6 +30,11 @@ namespace website.Controllers
 		public ProjectsController()
 		{
 			_projectsRepository = new ProjectsRepository();
+			_projectNames = new Dictionary<string, Projects.Item>();
+			foreach (var item in _projectsRepository.GetProjects().item)
+			{
+				_projectNames[item.name] = item;
+			}
 		}
 
 		/// <summary>
@@ -38,6 +44,13 @@ namespace website.Controllers
         {
 			return View(_projectsRepository.GetProjects());
         }
+
+		public ActionResult Project(string name)
+		{
+			if (!_projectNames.ContainsKey(name))
+				return Index();
+			return View(_projectNames[name]);
+		}
 
 		/// <summary>
 		/// Redirect to Bubble.

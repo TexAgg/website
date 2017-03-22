@@ -204,6 +204,7 @@
     <Content Include="packages.config" />
     <Content Include="Views\Projects\Markov.cshtml" />
     <Content Include="Views\Contact\PromoCodes.cshtml" />
+    <Content Include="Views\Projects\Project.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
