@@ -75,7 +75,6 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Web.Services" />
@@ -191,8 +190,6 @@
     <Content Include="Content\media\github.png" />
     <Content Include="Content\media\linkedin.png" />
     <Content Include="Static\timer\index.html" />
-    <Content Include="Content\Graph\graph.png" />
-    <Content Include="Content\Graph\placeholder.png" />
     <Content Include="Views\Graph\Index.cshtml" />
     <Content Include="Content\media\devpost.svg" />
     <Content Include="Static\Snake\index.html" />
@@ -205,6 +202,8 @@
     <Content Include="Views\Projects\Markov.cshtml" />
     <Content Include="Views\Contact\PromoCodes.cshtml" />
     <Content Include="Views\Projects\Project.cshtml" />
+    <Content Include="Content\graph\graph.png" />
+    <Content Include="Content\graph\placeholder.png" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -278,9 +277,6 @@
     <None Include="Static\timer\tsconfig.json" />
     <None Include="Static\timer\scripts\Timer.ts" />
     <None Include="Static\timer\scripts\main.ts" />
-    <None Include="Content\Graph\graph.wl" />
-    <None Include="Content\Graph\graph.gv" />
-    <None Include="Content\Graph\README.md" />
     <None Include="Static\Snake\.gitattributes" />
     <None Include="Static\Snake\Food.ts" />
     <None Include="Static\Snake\Game.ts" />
@@ -290,6 +286,9 @@
     <None Include="Static\Snake\build.py" />
     <None Include="Static\Snake\tsconfig.json" />
     <None Include="Static\README.txt" />
+    <None Include="Content\graph\graph.wl" />
+    <None Include="Content\graph\graph.gv" />
+    <None Include="Content\graph\README.md" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />

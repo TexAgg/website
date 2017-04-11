@@ -34,7 +34,7 @@ header {
 
 .jumbotron {
 	margin-bottom: 0;
-  	background: url("../Graph/graph.svg");
+  	background: url("../graph/graph.svg");
 }
 
 footer {

@@ -7,7 +7,7 @@
     "clippy.js": "^1.0.0"
   },
   "devDependencies": {
-    "clean-css": "^3.4.24",
+    "clean-css-cli": "^4.0.10",
     "css-loader": "^0.25.0",
     "script-loader": "^0.7.0",
     "style-loader": "^0.13.1",
