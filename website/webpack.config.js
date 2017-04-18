@@ -30,5 +30,8 @@ module.exports = {
 				loader: "style-loader!css-loader" 
 			}
 		]
+	},
+	externals: {
+		jquery: 'jQuery'
 	}
 };
