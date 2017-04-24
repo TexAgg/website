@@ -7,5 +7,6 @@
 yarn install
 # Webpack all the scripts.
 webpack
-# Minify css.
-cleancss "Content/styles/style.css" -o "dist/main.css"
+# Process and minify css.
+## http://lesscss.org/
+node_modules/.bin/lessc --clean-css "Content/styles/styles.less" "dist/main.css"
