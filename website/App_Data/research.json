@@ -3,7 +3,7 @@
     {
       "title": "Expansion of Permutations as a Product of Transpositions",
       "date": "Summer, 2016",
-      "aboutHTML": "Discovered formula determining the total number of different transposition decompositions of a permutation cycle, and developed a program to compute the entries and eigensystem of the integer partition matrix. Read the paper <a href=\"https://arxiv.org/abs/1702.06093\">here</a>.",
+      "aboutHTML": "Discovered formula determining the total number of different transposition decompositions of a permutation cycle, and developed a program to compute the entries and eigensystem of the integer partition matrix. Read the paper <a href='http://bit.ly/2pPpLIB'>here</a>.",
       "advisors": [
         "Micheal Anshelevich"
       ],
