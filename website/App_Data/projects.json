@@ -1,27 +1,27 @@
 ﻿{
 	"item": [
 		{
-			"about": "<a href='http://bit.ly/2qnmxZR'>GaikBot</a> is a chatbot, sort of like the \"sequel\" to Dank Sinatra. He is written in C#, and uses the Microsoft Bot Framework to integrate him with various channels, including SMS, Facebook, and Telegram.",
+			"about": "<a href='https://bitbucket.org/gaikema/gaikbot/wiki/Home'>GaikBot</a> is a chatbot, sort of like the \"sequel\" to Dank Sinatra. He is written in C#, and uses the Microsoft Bot Framework to integrate him with various channels, including SMS, Facebook, and Telegram.",
 			"display": "<iframe src=\"https://webchat.botframework.com/embed/gaikbot?s=_kROGLOlwLY.cwA.KSI.dyBYCR7BCGOtIE5qj0kSN3V1BWreyDC1oxhn_vAtEG0\" style=\"height: 502px; max-height: 502px;\"></iframe>",
 			"id": "gaikbot",
 			"name": "GaikBot",
-			"link": "http://bit.ly/2qnmxZR",
+			"link": "https://bitbucket.org/gaikema/gaikbot/wiki/Home",
 			"tags": [
 				"web",
 				"artificial intelligence"
 			]
 		},
 		{
-			"about": "Braino is another chatbot. Whenever he recieves a message, Braino searches a database which has been filled with conversations from <a href='http://bit.ly/2qnpRnT'>Facebook</a> and responds with the next thing said.",
+			"about": "Braino is another chatbot. Whenever he recieves a message, Braino searches a database which has been filled with conversations from <a href='https://www.facebook.com/help/212802592074644?helpref=uf_permalink'>Facebook</a> and responds with the next thing said.",
 			"id": "braino",
 			"name": "Braino",
-			"link": "http://bit.ly/2qu3We7"
+			"link": "https://github.com/TexAgg/Braino"
 		},
 		{
 			"about": "StoriesJs is a simple javascript file which adds non-functional stories to a website.",
 			"id": "storiesjs",
 			"name": "StoriesJs",
-			"link": "http://bit.ly/2oZoqLk",
+			"link": "https://www.npmjs.com/package/storiesjs",
 			"img": "https://github.com/TexAgg/storiesjs/raw/3324702a247defc2c10cb11e93c894fa47ee8ab9/img/example.png"
 		},
 		{
@@ -42,19 +42,19 @@
 			"tags": []
 		},
 		{
-			"about": "PolyRoot is a Mathematica library which implements various <a href='http://bit.ly/2oNXORv'>root-finding algorithms</a>. The source code can be found <a href='http://bit.ly/2pwl185'>here</a>.",
+			"about": "PolyRoot is a Mathematica library which impliments various <a href=\"https://en.wikipedia.org/wiki/Root-finding_algorithm\">root-finding algorithms</a>. The source code can be found <a href=\"https://github.com/TexAgg/PolyRoot\">here</a>.",
 			"id": "polyroot",
 			"name": "PolyRoot",
-			"link": "http://bit.ly/2pwl185",
+			"link": "https://github.com/TexAgg/PolyRoot",
 			"tags": [
 				"math"
 			]
 		},
 		{
-			"about": "A basic Markov text generator written in C++. View the source code <a href='http://bit.ly/2oWKZjb'>here</a>. \nI also created an implementation in PHP <a href='http://bit.ly/2pyMKqL'>here</a>. \n\nTry it <a href='/Projects/Markov'>here</a>!",
+			"about": "A basic Markov text generator written in C++. View the source code <a href=\"https://github.com/TexAgg/MarkovTextGenerator\">here</a>. \nI also created an implementation in PHP <a href=\"https://bitbucket.org/gaikema/markovbot/overview\">here</a>. \n\nTry it <a href='/Projects/Markov'>here</a>!",
 			"id": "markov",
 			"name": "Markov Text Generator",
-			"link": "http://bit.ly/2oWKZjb",
+			"link": "https://github.com/TexAgg/MarkovTextGenerator",
 			"tags": []
 		},
 		{
@@ -67,20 +67,20 @@
 			]
 		},
 		{
-			"about": "<a href='http://bit.ly/2plldZa'>Ilumi-Therapy</a> is an android app that me and my team created for HackDFW. It is based on the concept of Light Therapy, an emerging field in medical science. It was created using the <a href='http://ilumi.co/'>Ilumi</a> Smart Bulb SDK, and it won us first place in Ilumi's contest for the most creative use of their SDK at the hackathon. The source code can be found <a href='http://bit.ly/2pMU0QC'>here.</a>",
+			"about": "<a href='http://devpost.com/software/ilumi-therapy'>Ilumi-Therapy</a> is an android app that me and my team created for HackDFW. It is based on the concept of Light Therapy, an emerging field in medical science. It was created using the <a href='http://ilumi.co/'>Ilumi</a> Smart Bulb SDK, and it won us first place in Ilumi's contest for the most creative use of their SDK at the hackathon. The source code can be found <a href='https://github.com/ralphie9224/IlumiApp'>here.</a>",
 			"id": "ilumiapp",
 			"name": "IlumiTherapy",
-			"link": "http://bit.ly/2plldZa",
+			"link": "http://devpost.com/software/ilumi-therapy",
 			"tags": [
 				"hackathon"
 			]
 		},
 		{
-			"about": "<a href='http://bit.ly/2pNlaHc'>Dank Sinatra</a> is a Facebook chatbot. He is written in JavaScript (using Node.js) and a smidgen of Python. Type '\\help' to see a list of his available commands. He also pushes relevant messages to a database, sends me email updates, and posts weather updates every 3 hours, but new features are constantly being added. I hope to one day make him a full-on companion, such as Siri or Watson (albeit not as realistic). For more information, see <a href='http://bit.ly/2qnFFXF'>here.</a>",
+			"about": "<a href='https://www.facebook.com/profile.php?id=100010461758967&fref=ts'>Dank Sinatra</a> is a Facebook chatbot. He is written in JavaScript (using Node.js) and a smidgen of Python. Type '\\help' to see a list of his available commands. He also pushes relevant messages to a database, sends me email updates, and posts weather updates every 3 hours, but new features are constantly being added. I hope to one day make him a full-on companion, such as Siri or Watson (albiet not as realistic). For more information, see <a href=\"https://bitbucket.org/gaikema/danksinatra/wiki/Home\">here.</a>",
 			"display": "<a href='https://www.facebook.com/profile.php?id=100010461758967&fref=ts'><img class='proj' src='Content/media/fb_icon_325x325.png'></img></a></a>",
 			"id": "dank",
 			"name": "Dank Sinatra",
-			"link": "http://bit.ly/2qnFFXF",
+			"link": "https://bitbucket.org/gaikema/danksinatra/wiki/Home",
 			"img": "Content/media/fb_icon_325x325.png",
 			"tags": [
 				"web",

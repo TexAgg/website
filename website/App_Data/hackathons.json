@@ -3,13 +3,13 @@
     {
       "name": "HackDFW",
       "year": 2016,
-      "aboutHTML": "<a href='http://bit.ly/2plldZa'>Ilumi-Therapy</a> is an android app that me and my team created for HackDFW. It is based on the concept of Light Therapy, an emerging field in medical science. It was created using the <a href='http://ilumi.co/'>Ilumi</a> Smart Bulb SDK, and it won us first place in Ilumi's contest for the most creative use of their SDK at the hackathon. The source code can be found <a href='http://bit.ly/2pMU0QC'>here</a>.<br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/IhmKaYmkKGg?rel=0\" frameborder=\"0\" allowfullscreen></iframe>",
+      "aboutHTML": "<a href='http://devpost.com/software/ilumi-therapy'>Ilumi-Therapy</a> is an android app that me and my team created for HackDFW. It is based on the concept of Light Therapy, an emerging field in medical science. It was created using the <a href='http://ilumi.co/'>Ilumi</a> Smart Bulb SDK, and it won us first place in Ilumi's contest for the most creative use of their SDK at the hackathon. The source code can be found <a href='https://github.com/ralphie9224/IlumiApp'>here</a>.<br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/IhmKaYmkKGg?rel=0\" frameborder=\"0\" allowfullscreen></iframe>",
       "tags": null
     },
     {
       "name": "TamuHack",
       "year": 2016,
-      "aboutHTML": "<a href='http://bit.ly/2oNICUs'>Hackr</a> is a web app which helps hackers find teams at hackathons.",
+      "aboutHTML": "<a href='http://devpost.com/software/hackr-57zcwj'>Hackr</a> is a web app which helps hackers find teams at hackathons.",
       "tags": null
     }
   ]
