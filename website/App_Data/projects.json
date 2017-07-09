@@ -1,6 +1,12 @@
 ﻿{
 	"item": [
 		{
+			"about": "CodeSearch is a search engine that finds code snippets from around the web.",
+			"id": "codesearch",
+			"name": "CodeSearch",
+			"link": "https://bitbucket.org/gaikema/codesearch"
+		},
+		{
 			"about": "<a href='https://bitbucket.org/gaikema/gaikbot/wiki/Home'>GaikBot</a> is a chatbot, sort of like the \"sequel\" to Dank Sinatra. He is written in C#, and uses the Microsoft Bot Framework to integrate him with various channels, including SMS, Facebook, and Telegram.",
 			"display": "<iframe src=\"https://webchat.botframework.com/embed/gaikbot?s=_kROGLOlwLY.cwA.KSI.dyBYCR7BCGOtIE5qj0kSN3V1BWreyDC1oxhn_vAtEG0\" style=\"height: 502px; max-height: 502px;\"></iframe>",
 			"id": "gaikbot",
